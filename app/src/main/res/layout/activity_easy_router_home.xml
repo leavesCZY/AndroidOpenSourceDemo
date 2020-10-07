@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".easyrouter.EasyRouterHomeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="EasyRouterHomeActivity"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_navToSubPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到相同模块的其它页面" />
+
+    <Button
+        android:id="@+id/btn_navToTestAPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到其它模块的其它页面" />
+
+    <Button
+        android:id="@+id/btn_navToNothing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到非法页面" />
+
+</LinearLayout>
