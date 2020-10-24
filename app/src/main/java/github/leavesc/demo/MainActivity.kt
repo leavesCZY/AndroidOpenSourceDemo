@@ -24,6 +24,9 @@ class MainActivity : BaseActivity() {
         btn_easyRouter.setOnClickListener {
             EasyRouter.navigation(EasyRouterPath.PATH_HOME)
         }
+        btn_liveDataCallAdapter.setOnClickListener {
+            EasyRouter.navigation(EasyRouterPath.PATH_RETROFIT)
+        }
     }
 
 }

@@ -2,6 +2,7 @@ package github.leavesc.demo
 
 import android.app.Application
 import github.leavesc.easyrouter.EasyRouter
+import github.leavesc.retrofit.http.RetrofitManager
 
 /**
  * 作者：leavesC
@@ -20,6 +21,7 @@ class MyApp : Application() {
     override fun onCreate() {
         super.onCreate()
         context = this
+        RetrofitManager.context = context
         EasyRouter.init(this)
     }
 

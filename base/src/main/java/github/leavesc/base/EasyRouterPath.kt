@@ -14,4 +14,6 @@ object EasyRouterPath {
 
     const val PATH_TEST_A = "RouterTest/testA"
 
+    const val PATH_RETROFIT = "retrofit/liveDataCall"
+
 }

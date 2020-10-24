@@ -1,3 +1,4 @@
+include ':retrofit'
 include ':app'
 include ':base'
 include ':easyeventbus-api'
