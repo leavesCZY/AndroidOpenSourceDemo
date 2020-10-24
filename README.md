@@ -15,3 +15,7 @@
 [三方库源码笔记（5）-LeakCanary 源码详解](https://github.com/leavesC/AndroidGuide/tree/gitbook/android_opensource)
 
 [三方库源码笔记（6）-LeakCanary 扩展阅读](https://github.com/leavesC/AndroidGuide/tree/gitbook/android_opensource)
+
+[三方库源码笔记（7）-超详细的 Retrofit 源码解析](https://github.com/leavesC/AndroidGuide/tree/gitbook/android_opensource)
+
+[三方库源码笔记（8）-Retrofit 与 LiveData 的结合使用](https://github.com/leavesC/AndroidGuide/tree/gitbook/android_opensource)
