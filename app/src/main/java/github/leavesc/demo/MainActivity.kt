@@ -5,6 +5,7 @@ import github.leavesc.base.EasyRouterPath
 import github.leavesc.demo.base.BaseActivity
 import github.leavesc.demo.easyeventbus.EasyEventBusActivity
 import github.leavesc.easyrouter.EasyRouter
+import github.leavesc.glide.GlideActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 /**
@@ -26,6 +27,9 @@ class MainActivity : BaseActivity() {
         }
         btn_liveDataCallAdapter.setOnClickListener {
             EasyRouter.navigation(EasyRouterPath.PATH_RETROFIT)
+        }
+        btn_glide.setOnClickListener {
+            startActivity(GlideActivity::class.java)
         }
     }
 
