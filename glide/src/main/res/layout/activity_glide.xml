@@ -7,16 +7,31 @@
     tools:context=".GlideActivity">
 
     <ImageView
-        android:id="@+id/iv_view"
+        android:id="@+id/iv_tokenUrl"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:contentDescription="Glide"
         tools:background="#abc" />
 
-    <Button
-        android:id="@+id/btn_load"
+    <TextView
+        android:id="@+id/tv_progress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="请求" />
+        android:layout_margin="10dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:max="100" />
+
+    <Button
+        android:id="@+id/btn_loadTokenUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载图片"
+        android:textAllCaps="false" />
 
 </LinearLayout>

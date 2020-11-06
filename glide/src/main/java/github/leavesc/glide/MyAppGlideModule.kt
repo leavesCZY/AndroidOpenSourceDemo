@@ -8,6 +8,7 @@ import com.bumptech.glide.annotation.GlideModule
 import com.bumptech.glide.load.model.GlideUrl
 import com.bumptech.glide.module.AppGlideModule
 import github.leavesc.glide.net.OkHttpUrlLoader
+import github.leavesc.glide.net.ProgressInterceptor
 import okhttp3.OkHttpClient
 import java.io.InputStream
 
@@ -29,10 +30,12 @@ class MyAppGlideModule : AppGlideModule() {
     }
 
     override fun registerComponents(context: Context, glide: Glide, registry: Registry) {
+        val okHttpClient =
+            OkHttpClient.Builder().addInterceptor(ProgressInterceptor()).build()
         registry.replace(
             GlideUrl::class.java,
             InputStream::class.java,
-            OkHttpUrlLoader.Factory(OkHttpClient())
+            OkHttpUrlLoader.Factory(okHttpClient)
         )
     }
 

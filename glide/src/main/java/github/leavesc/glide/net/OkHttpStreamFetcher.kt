@@ -54,12 +54,12 @@ class OkHttpStreamFetcher(private val client: Call.Factory, private val url: Gli
 
     override fun onResponse(call: Call, response: Response) {
         if (response.isSuccessful) {
-            responseBody = response.body()
+            responseBody = response.body
             val contentLength = Preconditions.checkNotNull(responseBody).contentLength()
             stream = ContentLengthInputStream.obtain(responseBody!!.byteStream(), contentLength)
             callback?.onDataReady(stream)
         } else {
-            callback?.onLoadFailed(HttpException(response.message(), response.code()))
+            callback?.onLoadFailed(HttpException(response.message, response.code))
         }
     }
 

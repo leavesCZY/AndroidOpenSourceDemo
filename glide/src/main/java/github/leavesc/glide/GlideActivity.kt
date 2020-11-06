@@ -1,8 +1,12 @@
 package github.leavesc.glide
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
+import github.leavesc.glide.net.ProgressResponseBody
+import github.leavesc.glide.net.TokenGlideUrl
 import kotlinx.android.synthetic.main.activity_glide.*
 
 /**
@@ -14,13 +18,26 @@ import kotlinx.android.synthetic.main.activity_glide.*
 class GlideActivity : AppCompatActivity() {
 
     private val url =
-        "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603967458407&di=a6d1039f64bb781b5f366b3ede746f3b&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F0%2F54cae8f16b696.jpg"
+        "https://images.pexels.com/photos/1425174/pexels-photo-1425174.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260&token=tokenValue"
+
+    private val progressListener = object : ProgressResponseBody.ProgressListener {
+        override fun update(progress: Int) {
+            Log.e("GlideActivity", "progressBar-progress: " + progress)
+            progressBar.progress = progress
+            tv_progress.text = progress.toString()
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_glide)
-        btn_load.setOnClickListener {
-            Glide.with(this).load(url).into(iv_view)
+        ProgressResponseBody.addProgressListener(url, progressListener)
+        btn_loadTokenUrl.setOnClickListener {
+            Glide.with(this).load(TokenGlideUrl(url))
+                .placeholder(android.R.drawable.presence_away)
+                .skipMemoryCache(true)
+                .diskCacheStrategy(DiskCacheStrategy.NONE)
+                .into(iv_tokenUrl)
         }
     }
 
