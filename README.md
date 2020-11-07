@@ -20,3 +20,5 @@
 [三方库源码笔记（8）-Retrofit 与 LiveData 的结合使用](https://github.com/leavesC/AndroidGuide/tree/gitbook/android_opensource)
 
 [三方库源码笔记（9）-超详细的 Glide 源码详解](https://github.com/leavesC/AndroidGuide/tree/gitbook/android_opensource)
+
+[三方库源码笔记（10）-Glide 你可能不知道的知识点](https://github.com/leavesC/AndroidGuide/tree/gitbook/android_opensource)

@@ -1,10 +1,14 @@
 package github.leavesc.glide
 
+import android.graphics.Bitmap
+import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.request.target.CustomTarget
+import com.bumptech.glide.request.transition.Transition
 import github.leavesc.glide.net.ProgressResponseBody
 import github.leavesc.glide.net.TokenGlideUrl
 import kotlinx.android.synthetic.main.activity_glide.*
@@ -18,11 +22,10 @@ import kotlinx.android.synthetic.main.activity_glide.*
 class GlideActivity : AppCompatActivity() {
 
     private val url =
-        "https://images.pexels.com/photos/1425174/pexels-photo-1425174.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260&token=tokenValue"
+        "https://images.pexels.com/photos/5177790/pexels-photo-5177790.jpeg?auto=compress&token=tokenValue"
 
     private val progressListener = object : ProgressResponseBody.ProgressListener {
         override fun update(progress: Int) {
-            Log.e("GlideActivity", "progressBar-progress: " + progress)
             progressBar.progress = progress
             tv_progress.text = progress.toString()
         }
@@ -39,6 +42,27 @@ class GlideActivity : AppCompatActivity() {
                 .diskCacheStrategy(DiskCacheStrategy.NONE)
                 .into(iv_tokenUrl)
         }
+        btn_downloadImage.setOnClickListener {
+            Glide.with(this)
+                .asBitmap()
+                .load(url)
+                .into(object : CustomTarget<Bitmap>() {
+                    override fun onLoadCleared(placeholder: Drawable?) {
+                        showToast("onLoadCleared")
+                    }
+
+                    override fun onResourceReady(
+                        resource: Bitmap,
+                        transition: Transition<in Bitmap>?
+                    ) {
+                        iv_tokenUrl.setImageBitmap(resource)
+                    }
+                })
+        }
+    }
+
+    private fun showToast(msg: Any) {
+        Toast.makeText(this, msg.toString(), Toast.LENGTH_SHORT).show()
     }
 
 }

@@ -34,4 +34,11 @@
         android:text="加载图片"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/btn_downloadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下载图片"
+        android:textAllCaps="false" />
+
 </LinearLayout>

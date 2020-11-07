@@ -32,7 +32,6 @@ internal class ProgressResponseBody constructor(
         private val progressMap = mutableMapOf<String, WeakReference<ProgressListener>>()
 
         fun addProgressListener(url: String, listener: ProgressListener) {
-            Log.e("TAG", "progressMapSize: " + progressMap.size)
             progressMap[url] = WeakReference(listener)
         }
 
