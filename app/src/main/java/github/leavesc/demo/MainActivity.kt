@@ -2,6 +2,7 @@ package github.leavesc.demo
 
 import android.os.Bundle
 import github.leavesc.base.EasyRouterPath
+import github.leavesc.coil.CoilMainActivity
 import github.leavesc.demo.base.BaseActivity
 import github.leavesc.demo.easyeventbus.EasyEventBusActivity
 import github.leavesc.easyrouter.EasyRouter
@@ -30,6 +31,9 @@ class MainActivity : BaseActivity() {
         }
         btn_glide.setOnClickListener {
             startActivity(GlideActivity::class.java)
+        }
+        btn_coil.setOnClickListener {
+            startActivity(CoilMainActivity::class.java)
         }
     }
 

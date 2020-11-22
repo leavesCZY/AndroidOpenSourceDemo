@@ -55,4 +55,5 @@ dependencies {
     implementation project(path: ':easyrouter-test')
     implementation project(path: ':retrofit')
     implementation project(path: ':glide')
+    implementation project(path: ':coil')
 }

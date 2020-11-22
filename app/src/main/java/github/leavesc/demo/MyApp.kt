@@ -1,6 +1,7 @@
 package github.leavesc.demo
 
 import android.app.Application
+import github.leavesc.coil.CoilHolder
 import github.leavesc.easyrouter.EasyRouter
 import github.leavesc.retrofit.http.RetrofitManager
 
@@ -23,6 +24,7 @@ class MyApp : Application() {
         context = this
         RetrofitManager.context = context
         EasyRouter.init(this)
+        CoilHolder.init(this)
     }
 
 }
