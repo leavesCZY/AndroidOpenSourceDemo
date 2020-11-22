@@ -26,3 +26,5 @@
 [三方库源码笔记（11）-OkHttp 源码详解](https://juejin.im/post/6895369745445748749)
 
 [三方库源码笔记（12）-OkHttp / Retrofit 开发调试利器](https://juejin.im/post/6895740949025177607)
+
+[三方库源码笔记（13）-可能是全网第一篇 Coil 的源码分析文章](https://juejin.cn/user/923245496518439/posts)
