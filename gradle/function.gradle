@@ -1,0 +1,68 @@
+ext.FunctionExt = [
+        projectName                   : {
+            return project.name
+        },
+        isAppModule                   : {
+            return FunctionExt.projectName() == "app"
+        },
+        getPropertiesEntity           : { filePath ->
+            def properties = new Properties()
+            def inputStream = null
+            try {
+                inputStream = new File(filePath).newDataInputStream()
+                properties.load(inputStream)
+                def map = [:]
+                properties.entrySet().each {
+                    map[it.key] = it.value
+                }
+                return map
+            } catch (Exception e) {
+                throw e
+            } finally {
+                if (inputStream != null) {
+                    inputStream.close()
+                }
+            }
+        },
+        getPropertieValue             : { path, key ->
+            return getPropertiesEntity(path, key)
+        },
+        buildTime                     : {
+            def date = new Date()
+            def formattedDate = date.format('yyyyMMdd_HHmm')
+            return formattedDate
+        },
+        generateBuildInfoInBuildConfig: { type, field, value ->
+            if (type == 'String') {
+                android.defaultConfig.buildConfigField type, field, "\"$value\""
+            } else {
+                android.defaultConfig.buildConfigField type, field, "$value"
+            }
+        },
+        generateBuildInfoRevision     : { ->
+            if (hasProperty('buildRevision')) {
+                return buildRevision
+            } else {
+                try {
+                    def cmd = "git rev-parse HEAD"
+                    def result = cmd.execute().text.trim()
+                    if (result.length() < 7) {
+                        println "*warning: invalid hashcode revision: ${result}"
+                        return '0123456789ABCDEF0123456789ABCDEF'
+                    }
+                    return result
+
+                } catch (Exception e) {
+                    e.printStackTrace()
+                }
+
+                return '0123456789ABCDEF0123456789ABCDEF'
+            }
+        },
+        generateBuildInfoTime         : { ->
+            return new Date().format("yyyy-MM-dd HH:mm:ss", TimeZone.getTimeZone('Asia/Shanghai'))
+        },
+        getAppName                    : { ->
+            return new String(appNameByGradleExt.toString().getBytes("iso8859-1"), "UTF-8")
+        }
+]

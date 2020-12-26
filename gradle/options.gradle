@@ -1,0 +1,83 @@
+apply from: "${rootDir}${File.separator}gradle${File.separator}function.gradle"
+apply from: "${rootDir}${File.separator}gradle${File.separator}dependencies.gradle"
+
+def projectName = project.name
+
+if (FunctionExt.isAppModule()) {
+    apply plugin: 'com.android.application'
+    apply plugin: 'kotlin-android'
+    apply plugin: 'kotlin-android-extensions'
+    apply plugin: 'kotlin-kapt'
+    doAndroid()
+    doAndroidDependencies(dependencies_android)
+} else if (projectName == "easyeventbus-api" || projectName == "easyeventbus-processor"
+        || projectName == "easyrouter-processor" || projectName == "easyrouter-annotation") {
+    apply plugin: 'java-library'
+    apply plugin: 'kotlin'
+    java {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+} else {
+    apply plugin: 'com.android.library'
+    apply plugin: 'kotlin-android'
+    apply plugin: 'kotlin-android-extensions'
+    apply plugin: 'kotlin-kapt'
+    doAndroid()
+    doAndroidDependencies(dependencies_android)
+}
+
+def doAndroid() {
+    android {
+        compileSdkVersion 30
+        buildToolsVersion "29.0.3"
+        defaultConfig {
+            if (FunctionExt.isAppModule()) {
+                applicationId "github.leavesc.demo"
+            }
+            minSdkVersion 21
+            targetSdkVersion 30
+            versionCode 1
+            versionName "1.0"
+        }
+        buildTypes {
+            debug {
+                minifyEnabled false
+                debuggable true
+                proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            }
+            release {
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            }
+        }
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+        kotlinOptions {
+            jvmTarget = JavaVersion.VERSION_1_8
+        }
+    }
+}
+
+def doAndroidDependencies(Map<String, String> targetDependencies) {
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+        targetDependencies.each {
+            if (it.key.endsWith("kapt")) {
+                kapt it.value
+            } else if (it.key.endsWith("debugImpl")) {
+                debugImplementation it.value
+            } else if (it.key.endsWith("releaseImpl")) {
+                releaseImplementation it.value
+            } else if (it.key.endsWith("testImpl")) {
+                testImplementation it.value
+            } else if (it.key.endsWith("androidTestImpl")) {
+                androidTestImplementation it.value
+            } else {
+                implementation it.value
+            }
+        }
+    }
+}

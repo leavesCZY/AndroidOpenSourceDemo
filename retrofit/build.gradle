@@ -1,27 +1,3 @@
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-kapt'
-
-android {
-    compileSdkVersion 30
-    buildToolsVersion "29.0.3"
-    defaultConfig {
-        minSdkVersion 17
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-}
-
 kapt {
     arguments {
         arg("EASYROUTER_MODULE_NAME", project.getName())
@@ -29,24 +5,12 @@ kapt {
 }
 
 dependencies {
-    implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
-    testImplementation 'junit:junit:4.13'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
+    implementation dependencies_all['retrofit']
+    implementation dependencies_all['retrofit-converter-gson']
+    debugImplementation dependencies_all['monitor-debugImpl']
+    releaseImplementation dependencies_all['monitor-releaseImpl']
     implementation project(path: ':base')
-
     implementation project(path: ':easyrouter-api')
     implementation project(path: ':easyrouter-annotation')
     kapt project(path: ':easyrouter-processor')
-
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
-
-    debugImplementation 'com.github.leavesC.Monitor:monitor:1.1.0'
-    releaseImplementation 'com.github.leavesC.Monitor:monitor-no-op:1.1.0'
 }
