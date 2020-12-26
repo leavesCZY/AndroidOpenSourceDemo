@@ -15,4 +15,6 @@ dependencies {
     implementation project(path: ':retrofit')
     implementation project(path: ':glide')
     implementation project(path: ':coil')
+    implementation project(path: ':constraint-layout')
+    implementation project(path: ':motion-layout')
 }
