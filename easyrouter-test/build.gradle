@@ -7,5 +7,4 @@ kapt {
 dependencies {
     implementation project(path: ':easyrouter-annotation')
     kapt project(path: ':easyrouter-processor')
-    implementation project(path: ':base')
 }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlowActivity">
+
+    <include
+        android:id="@+id/cardView1"
+        layout="@layout/item_cardview" />
+
+    <include
+        android:id="@+id/cardView2"
+        layout="@layout/item_cardview" />
+
+    <include
+        android:id="@+id/cardView3"
+        layout="@layout/item_cardview" />
+
+    <include
+        android:id="@+id/cardView4"
+        layout="@layout/item_cardview" />
+
+    <include
+        android:id="@+id/cardView5"
+        layout="@layout/item_cardview" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="cardView1,cardView2,cardView3,cardView4,cardView5"
+        app:flow_horizontalGap="30dp"
+        app:flow_verticalGap="30dp"
+        app:flow_wrapMode="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

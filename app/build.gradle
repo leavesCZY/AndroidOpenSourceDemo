@@ -10,7 +10,6 @@ dependencies {
     implementation project(path: ':easyrouter-api')
     implementation project(path: ':easyrouter-annotation')
     kapt project(path: ':easyrouter-processor')
-    implementation project(path: ':base')
     implementation project(path: ':easyrouter-test')
     implementation project(path: ':retrofit')
     implementation project(path: ':glide')

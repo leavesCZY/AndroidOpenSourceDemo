@@ -46,4 +46,12 @@
         android:text="Coil"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/btn_constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="ConstraintLayout"
+        android:textAllCaps="false" />
+
 </LinearLayout>

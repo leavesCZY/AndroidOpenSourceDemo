@@ -3,6 +3,7 @@ package github.leavesc.demo
 import android.os.Bundle
 import github.leavesc.base.EasyRouterPath
 import github.leavesc.coil.CoilMainActivity
+import github.leavesc.constraint_layout.ConstraintLayoutMainActivity
 import github.leavesc.demo.base.BaseActivity
 import github.leavesc.demo.easyeventbus.EasyEventBusActivity
 import github.leavesc.easyrouter.EasyRouter
@@ -34,6 +35,9 @@ class MainActivity : BaseActivity() {
         }
         btn_coil.setOnClickListener {
             startActivity(CoilMainActivity::class.java)
+        }
+        btn_constraintLayout.setOnClickListener {
+            startActivity(ConstraintLayoutMainActivity::class.java)
         }
     }
 

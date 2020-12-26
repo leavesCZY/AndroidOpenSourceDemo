@@ -79,5 +79,8 @@ def doAndroidDependencies(Map<String, String> targetDependencies) {
                 implementation it.value
             }
         }
+        if (project.name != "base") {
+            implementation project(path: ':base')
+        }
     }
 }
