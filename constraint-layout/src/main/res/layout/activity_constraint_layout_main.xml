@@ -38,4 +38,12 @@
         android:text="CircularRevealHelper"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/btn_imageFilterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="ImageFilterButton"
+        android:textAllCaps="false" />
+
 </LinearLayout>
