@@ -24,6 +24,9 @@ class ConstraintLayoutMainActivity : BaseActivity() {
         btn_constraintSet.setOnClickListener {
             startActivity(ConstraintSetActivity::class.java)
         }
+        btn_circularRevealHelper.setOnClickListener {
+            startActivity(ConstraintHelperActivity::class.java)
+        }
     }
 
 }
