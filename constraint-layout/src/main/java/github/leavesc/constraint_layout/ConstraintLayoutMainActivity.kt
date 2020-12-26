@@ -21,6 +21,9 @@ class ConstraintLayoutMainActivity : BaseActivity() {
         btn_layer.setOnClickListener {
             startActivity(LayerActivity::class.java)
         }
+        btn_constraintSet.setOnClickListener {
+            startActivity(ConstraintSetActivity::class.java)
+        }
     }
 
 }
