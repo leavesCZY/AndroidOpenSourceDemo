@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <ConstraintSet android:id="@+id/initial">
+        <Constraint
+            android:id="@+id/scrolling_background"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/empty">
+        <Constraint
+            android:id="@+id/scrolling_background"
+            android:layout_width="0dp"
+            android:layout_height="1000dp"
+            android:translationY="100px"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet
+        android:id="@+id/first_half"
+        motion:deriveConstraintsFrom="@+id/empty">
+        <Constraint
+            android:id="@+id/scrolling_background"
+            android:layout_width="0dp"
+            android:layout_height="2000dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.80" />
+    </ConstraintSet>
+    <ConstraintSet
+        android:id="@+id/middle_animations"
+        motion:deriveConstraintsFrom="@+id/first_half">
+        <Constraint
+            android:id="@+id/spacemoji_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:alpha=".99"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:alpha="0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="parent"
+            motion:layout_constraintVertical_chainStyle="packed" />
+        <Constraint
+            android:id="@+id/scrolling_background"
+            android:layout_width="0dp"
+            android:layout_height="2000dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.70" />
+    </ConstraintSet>
+    <ConstraintSet
+        android:id="@+id/second_half"
+        motion:deriveConstraintsFrom="@+id/middle_animations">
+        <Constraint
+            android:id="@+id/scrolling_background"
+            android:layout_width="0dp"
+            android:layout_height="2000dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:alpha="1.0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/spacemoji_text"
+            motion:layout_constraintVertical_chainStyle="packed" />
+    </ConstraintSet>
+    <!-- Each transition uses animateToEnd to combine a sequence of smaller animations into one
+    big entrance animation. -->
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@+id/empty"
+        motion:constraintSetStart="@+id/initial"
+        motion:duration="200"
+        motion:motionInterpolator="linear" />
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@+id/first_half"
+        motion:constraintSetStart="@+id/empty"
+        motion:duration="500"
+        motion:motionInterpolator="linear" />
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@+id/middle_animations"
+        motion:constraintSetStart="@+id/first_half"
+        motion:duration="300"
+        motion:motionInterpolator="linear">
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                motion:framePosition="20"
+                motion:motionTarget="@+id/spacemoji_text" />
+        </KeyFrameSet>
+    </Transition>
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@+id/second_half"
+        motion:constraintSetStart="@+id/middle_animations"
+        motion:duration="7000"
+        motion:motionInterpolator="easeOut">
+        <KeyFrameSet>
+            <KeyPosition
+                motion:framePosition="20"
+                motion:motionTarget="@+id/cardView"
+                motion:percentY="1.0" />
+            <KeyAttribute
+                android:alpha="1"
+                motion:framePosition="20"
+                motion:motionTarget="@+id/cardView" />
+        </KeyFrameSet>
+    </Transition>
+</MotionScene>

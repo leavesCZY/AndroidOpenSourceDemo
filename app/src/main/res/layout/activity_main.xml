@@ -54,4 +54,12 @@
         android:text="ConstraintLayout"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/btn_motionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="MotionLayout"
+        android:textAllCaps="false" />
+
 </LinearLayout>

@@ -1,8 +1,8 @@
 package github.leavesc.demo.easyeventbus
 
 import android.os.Bundle
+import github.leavesc.base.BaseActivity
 import github.leavesc.demo.R
-import github.leavesc.demo.base.BaseActivity
 import github.leavesc.demo.utils.showToast
 import github.leavesc.easyeventbus.EasyEventBus
 import github.leavesc.easyeventbus.Event

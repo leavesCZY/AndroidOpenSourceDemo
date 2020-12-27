@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MotionLayoutMainActivity">
+
+    <Button
+        android:id="@+id/btn_demoA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="飞跃星空火箭"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_demoB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="飞跃星空火箭-收缩"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_demoC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="动态背景"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_demoD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="顶部位移收缩"
+        android:textAllCaps="false" />
+
+</LinearLayout>

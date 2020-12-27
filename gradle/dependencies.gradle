@@ -13,9 +13,9 @@ ext {
             "espresso-androidx-androidTestImpl": 'androidx.test.espresso:espresso-core:3.3.0',
             "kotlin-stdlib"                    : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
             "core-ktx"                         : "androidx.core:core-ktx:1.3.2",
-            "appcompat"                        : "androidx.appcompat:appcompat:1.2.0",
-            "constraintlayout"                 : "androidx.constraintlayout:constraintlayout:2.0.4",
-            "material"                         : "com.google.android.material:material:1.2.1",
+            "appcompat"                        : "androidx.appcompat:appcompat:1.3.0-alpha02",
+            "constraintlayout"                 : "androidx.constraintlayout:constraintlayout:2.1.0-alpha2",
+            "material"                         : "com.google.android.material:material:1.3.0-beta01",
     ]
 
     dependencies_feature = [
@@ -32,5 +32,6 @@ ext {
     ]
 
     dependencies_all = [:]
+    dependencies_all.putAll(dependencies_android)
     dependencies_all.putAll(dependencies_feature)
 }

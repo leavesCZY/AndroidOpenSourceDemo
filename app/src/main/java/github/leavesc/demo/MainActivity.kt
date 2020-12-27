@@ -1,13 +1,14 @@
 package github.leavesc.demo
 
 import android.os.Bundle
+import github.leavesc.base.BaseActivity
 import github.leavesc.base.EasyRouterPath
 import github.leavesc.coil.CoilMainActivity
 import github.leavesc.constraint_layout.ConstraintLayoutMainActivity
-import github.leavesc.demo.base.BaseActivity
 import github.leavesc.demo.easyeventbus.EasyEventBusActivity
 import github.leavesc.easyrouter.EasyRouter
 import github.leavesc.glide.GlideActivity
+import github.leavesc.motion_layout.MotionLayoutMainActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 /**
@@ -38,6 +39,9 @@ class MainActivity : BaseActivity() {
         }
         btn_constraintLayout.setOnClickListener {
             startActivity(ConstraintLayoutMainActivity::class.java)
+        }
+        btn_motionLayout.setOnClickListener {
+            startActivity(MotionLayoutMainActivity::class.java)
         }
     }
 
