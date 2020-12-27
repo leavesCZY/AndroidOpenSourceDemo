@@ -10,33 +10,33 @@
             <KeyAttribute
                 android:rotation="22"
                 app:framePosition="10"
-                app:motionTarget="@+id/ship_emoji" />
+                app:motionTarget="@+id/iv_emoji" />
             <KeyPosition
                 app:framePosition="25"
                 app:keyPositionType="parentRelative"
-                app:motionTarget="@+id/ship_emoji"
+                app:motionTarget="@+id/iv_emoji"
                 app:percentY=".6" />
             <KeyAttribute
                 android:rotation="40"
                 app:framePosition="50"
-                app:motionTarget="@+id/ship_emoji" />
+                app:motionTarget="@+id/iv_emoji" />
             <!-- framePosition 50 describes the screen at the middle tab-->
             <KeyPosition
                 app:framePosition="50"
                 app:keyPositionType="parentRelative"
-                app:motionTarget="@+id/ship_emoji"
+                app:motionTarget="@+id/iv_emoji"
                 app:percentY=".8" />
             <KeyPosition
                 app:framePosition="50"
                 app:keyPositionType="deltaRelative"
-                app:motionTarget="@+id/background"
+                app:motionTarget="@+id/iv_background"
                 app:percentY=".05" />
         </KeyFrameSet>
     </Transition>
     <ConstraintSet android:id="@+id/start">
         <!-- animate background from bottom constraint at start -->
         <Constraint
-            android:id="@+id/background"
+            android:id="@+id/iv_background"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintDimensionRatio="w,1:1"
@@ -45,7 +45,7 @@
             app:layout_constraintTop_toTopOf="parent" />
         <!-- Rotate the ship_emoji and use bias to move it-->
         <Constraint
-            android:id="@+id/ship_emoji"
+            android:id="@+id/iv_emoji"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:rotation="30"
@@ -59,7 +59,7 @@
     <ConstraintSet android:id="@+id/end">
         <!-- animate background to top constraint at end -->
         <Constraint
-            android:id="@+id/background"
+            android:id="@+id/iv_background"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintDimensionRatio="w,16:7"
@@ -68,7 +68,7 @@
             app:layout_constraintTop_toTopOf="parent" />
         <!-- Rotate the ship_emoji and use bias to move it-->
         <Constraint
-            android:id="@+id/ship_emoji"
+            android:id="@+id/iv_emoji"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:rotation="-20"

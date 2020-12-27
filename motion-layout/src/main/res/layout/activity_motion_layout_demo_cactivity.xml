@@ -2,11 +2,10 @@
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/motion_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorPrimary"
-    app:layoutDescription="@xml/activity_entrance_scene"
+    app:layoutDescription="@xml/scene_demo_c"
     tools:context=".MotionLayoutDemoCActivity">
 
     <ImageView

@@ -24,7 +24,7 @@
     <ConstraintSet android:id="@+id/start">
 
         <Constraint
-            android:id="@id/background"
+            android:id="@id/iv_background"
             android:layout_width="0dp"
             android:layout_height="0dp"
             motion:layout_constraintBottom_toBottomOf="parent"
@@ -83,7 +83,7 @@
 
     <ConstraintSet android:id="@+id/end">
         <Constraint
-            android:id="@id/background"
+            android:id="@id/iv_background"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:visibility="invisible"

@@ -11,17 +11,17 @@
         android:id="@+id/motion_layout"
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        app:layoutDescription="@xml/activity_view_pager_integration_scene">
+        app:layoutDescription="@xml/scene_demo_a">
 
         <ImageView
-            android:id="@+id/background"
+            android:id="@+id/iv_background"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
             android:src="@drawable/rocket_background" />
 
         <ImageView
-            android:id="@+id/ship_emoji"
+            android:id="@+id/iv_emoji"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/icon_rocket" />

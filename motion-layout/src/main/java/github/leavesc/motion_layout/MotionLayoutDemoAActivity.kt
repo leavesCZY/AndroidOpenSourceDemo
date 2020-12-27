@@ -79,7 +79,7 @@ class FunFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view = inflater.inflate(R.layout.layout_fun_fragment, container, false)
+        val view = inflater.inflate(R.layout.fragment_fun, container, false)
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
         val adapter = MyRecyclerViewAdapter()
         recyclerView.layoutManager = LinearLayoutManager(activity)

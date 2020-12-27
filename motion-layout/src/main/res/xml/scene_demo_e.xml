@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@+id/start"
-        motion:duration="1000"
+        motion:duration="2000"
         motion:motionInterpolator="linear">
         <OnSwipe
             motion:dragDirection="dragRight"
             motion:touchAnchorId="@id/button"
             motion:touchAnchorSide="right" />
+        <KeyFrameSet>
+            <KeyAttribute
+                app:framePosition="30"
+                app:motionTarget="@id/button">
+                <CustomAttribute
+                    motion:attributeName="BackgroundColor"
+                    motion:customColorValue="#CDDC39" />
+            </KeyAttribute>
+            <KeyAttribute
+                app:framePosition="70"
+                app:motionTarget="@id/button">
+                <CustomAttribute
+                    motion:attributeName="BackgroundColor"
+                    motion:customColorValue="#0FF6E1" />
+            </KeyAttribute>
+        </KeyFrameSet>
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
@@ -24,7 +41,7 @@
             motion:layout_constraintTop_toTopOf="parent">
             <CustomAttribute
                 motion:attributeName="BackgroundColor"
-                motion:customColorValue="#D81B60" />
+                motion:customColorValue="#F44336" />
         </Constraint>
     </ConstraintSet>
 
@@ -39,7 +56,7 @@
             motion:layout_constraintTop_toTopOf="parent">
             <CustomAttribute
                 motion:attributeName="BackgroundColor"
-                motion:customColorValue="#9999FF" />
+                motion:customColorValue="#0A4460" />
         </Constraint>
     </ConstraintSet>
 
