@@ -27,8 +27,8 @@ class ConstraintLayoutMainActivity : BaseActivity() {
         btn_circularRevealHelper.setOnClickListener {
             startActivity(ConstraintHelperActivity::class.java)
         }
-        btn_imageFilterButton.setOnClickListener {
-            startActivity(ImageFilterButtonActivity::class.java)
+        btn_imageFilterView.setOnClickListener {
+            startActivity(ImageFilterViewActivity::class.java)
         }
     }
 

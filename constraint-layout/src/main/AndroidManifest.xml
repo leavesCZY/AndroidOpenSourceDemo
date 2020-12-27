@@ -3,7 +3,7 @@
     package="github.leavesc.constraint_layout">
 
     <application>
-        <activity android:name=".ImageFilterButtonActivity"></activity>
+        <activity android:name=".ImageFilterViewActivity"></activity>
         <activity android:name=".ConstraintHelperActivity" />
         <activity android:name=".ConstraintSetActivity" />
         <activity android:name=".LayerActivity" />

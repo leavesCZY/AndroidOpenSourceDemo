@@ -3,7 +3,7 @@ package github.leavesc.constraint_layout
 import android.os.Bundle
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_image_filter_button.*
+import kotlinx.android.synthetic.main.activity_image_filter_view.*
 
 /**
  * @Author: leavesC
@@ -11,17 +11,27 @@ import kotlinx.android.synthetic.main.activity_image_filter_button.*
  * @Desc:
  * @Github：https://github.com/leavesC
  */
-class ImageFilterButtonActivity : AppCompatActivity() {
+class ImageFilterViewActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_image_filter_button)
+        setContentView(R.layout.activity_image_filter_view)
         seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
-                val realProgress = (progress / 100.0 * 1.0).toFloat()
-                imageView.roundPercent = realProgress
-                imageView.saturation = realProgress
-                imageView.brightness = realProgress
+                if (fromUser) {
+                    val realProgress = (progress / 100.0).toFloat()
+
+                    imageView1.saturation = realProgress * 20
+                    imageView2.brightness = 1 - realProgress
+
+                    imageView3.warmth = realProgress * 20
+                    imageView4.contrast = realProgress * 2
+
+                    imageView5.round = realProgress * 40
+                    imageView6.roundPercent = realProgress
+
+                    imageView7.crossfade = realProgress
+                }
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {
