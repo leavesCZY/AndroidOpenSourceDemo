@@ -38,4 +38,12 @@
         android:text="顶部位移收缩"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/btn_demoE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="渐变的方块"
+        android:textAllCaps="false" />
+
 </LinearLayout>

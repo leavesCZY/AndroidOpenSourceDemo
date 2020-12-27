@@ -27,6 +27,9 @@ class MotionLayoutMainActivity : BaseActivity() {
         btn_demoD.setOnClickListener {
             startActivity(MotionLayoutDemoDActivity::class.java)
         }
+        btn_demoE.setOnClickListener {
+            startActivity(MotionLayoutDemoEActivity::class.java)
+        }
     }
 
 }

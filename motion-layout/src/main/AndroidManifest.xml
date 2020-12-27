@@ -4,6 +4,9 @@
 
     <application>
         <activity
+            android:name=".MotionLayoutDemoEActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
             android:name=".MotionLayoutDemoCActivity"
             android:theme="@style/AppThemeNoActionBar" />
         <activity
