@@ -6,29 +6,28 @@
         app:constraintSetEnd="@id/end"
         app:constraintSetStart="@id/start">
         <KeyFrameSet>
-            <KeyAttribute
-                android:rotation="22"
-                app:framePosition="10"
-                app:motionTarget="@id/iv_emoji" />
             <KeyPosition
-                app:framePosition="25"
+                android:rotation="10"
+                app:framePosition="33"
                 app:keyPositionType="parentRelative"
                 app:motionTarget="@id/iv_emoji"
-                app:percentY=".6" />
-            <KeyAttribute
-                android:rotation="40"
-                app:framePosition="50"
-                app:motionTarget="@id/iv_emoji" />
+                app:percentX="0.2"
+                app:percentY="0.6" />
             <KeyPosition
+                android:rotation="20"
                 app:framePosition="50"
                 app:keyPositionType="parentRelative"
                 app:motionTarget="@id/iv_emoji"
-                app:percentY=".8" />
+                app:percentX="0.5"
+                app:percentY="0.6" />
             <KeyPosition
-                app:framePosition="50"
-                app:keyPositionType="deltaRelative"
-                app:motionTarget="@id/iv_background"
-                app:percentY=".05" />
+                android:rotation="120"
+                app:framePosition="80"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/iv_emoji"
+                app:percentX="0.8"
+                app:percentY="0.4" />
+
         </KeyFrameSet>
     </Transition>
     <ConstraintSet android:id="@+id/start">
@@ -69,12 +68,12 @@
             android:id="@+id/iv_emoji"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:rotation="-20"
+            android:rotation="30"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.93"
+            app:layout_constraintHorizontal_bias="0.07"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.3" />
+            app:layout_constraintVertical_bias="0.7" />
     </ConstraintSet>
 </MotionScene>

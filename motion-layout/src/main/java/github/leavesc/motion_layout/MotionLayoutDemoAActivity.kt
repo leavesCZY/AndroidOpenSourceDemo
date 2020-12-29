@@ -20,11 +20,11 @@ import kotlinx.android.synthetic.main.activity_motion_layout_demo_aactivity.*
  * @Desc:
  * @Github：https://github.com/leavesC
  */
-class MotionLayoutDemoAActivity : BaseActivity() {
+open class MotionLayoutDemoAActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_motion_layout_demo_aactivity)
+        setContentView(getContentViewId())
         val fragmentAdapter = FunFragmentAdapter(this)
         viewPager.adapter = FunFragmentAdapter(this)
         val tabLayoutMediator = TabLayoutMediator(tabLayout, viewPager) { tab, position ->
@@ -41,6 +41,10 @@ class MotionLayoutDemoAActivity : BaseActivity() {
                 motion_layout.progress = progress
             }
         })
+    }
+
+    protected open fun getContentViewId(): Int {
+        return R.layout.activity_motion_layout_demo_aactivity
     }
 
 }
