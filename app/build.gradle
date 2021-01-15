@@ -5,15 +5,15 @@ kapt {
 }
 
 dependencies {
-    implementation project(path: ':easyeventbus-api')
-    kapt project(path: ':easyeventbus-processor')
-    implementation project(path: ':easyrouter-api')
-    implementation project(path: ':easyrouter-annotation')
-    kapt project(path: ':easyrouter-processor')
-    implementation project(path: ':easyrouter-test')
+    implementation project(path: ':easyrouter_api')
+    implementation project(path: ':easyrouter_annotation')
+    kapt project(path: ':easyrouter_processor')
+    implementation project(path: ':easyrouter_demo')
+    implementation project(path: ':easyeventbus_demo')
     implementation project(path: ':retrofit')
     implementation project(path: ':glide')
     implementation project(path: ':coil')
-    implementation project(path: ':constraint-layout')
-    implementation project(path: ':motion-layout')
+    implementation project(path: ':constraint_layout')
+    implementation project(path: ':motion_layout')
+
 }

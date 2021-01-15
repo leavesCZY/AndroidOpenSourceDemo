@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="github.leavesc.constraint_layout">
+
+    <application>
+        <activity android:name=".ImageFilterViewActivity" />
+        <activity android:name=".ConstraintHelperActivity" />
+        <activity android:name=".ConstraintSetActivity" />
+        <activity android:name=".LayerActivity" />
+        <activity android:name=".FlowActivity" />
+        <activity android:name=".ConstraintLayoutMainActivity" />
+    </application>
+
+</manifest>

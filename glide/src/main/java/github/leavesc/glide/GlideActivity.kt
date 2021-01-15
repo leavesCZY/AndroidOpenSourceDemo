@@ -3,12 +3,11 @@ package github.leavesc.glide
 import android.graphics.Bitmap
 import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
+import github.leavesc.base.BaseActivity
 import github.leavesc.glide.net.ProgressResponseBody
 import github.leavesc.glide.net.TokenGlideUrl
 import kotlinx.android.synthetic.main.activity_glide.*
@@ -19,7 +18,7 @@ import kotlinx.android.synthetic.main.activity_glide.*
  * 描述：
  * GitHub：https://github.com/leavesC
  */
-class GlideActivity : AppCompatActivity() {
+class GlideActivity : BaseActivity() {
 
     private val url =
         "https://images.pexels.com/photos/5177790/pexels-photo-5177790.jpeg?auto=compress&token=tokenValue"
@@ -59,10 +58,6 @@ class GlideActivity : AppCompatActivity() {
                     }
                 })
         }
-    }
-
-    private fun showToast(msg: Any) {
-        Toast.makeText(this, msg.toString(), Toast.LENGTH_SHORT).show()
     }
 
 }

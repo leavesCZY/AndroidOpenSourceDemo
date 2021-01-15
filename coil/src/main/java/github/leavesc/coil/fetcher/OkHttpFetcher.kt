@@ -29,7 +29,7 @@ class OkHttpFetcher(private val callFactory: Call.Factory) : Fetcher<Uri> {
 
     override fun handles(data: Uri) = data.scheme == "http" || data.scheme == "https"
 
-    override fun key(data: Uri): String? {
+    override fun key(data: Uri): String {
         return data.toString()
     }
 

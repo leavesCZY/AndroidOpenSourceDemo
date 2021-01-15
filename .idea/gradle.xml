@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/base" />
+            <option value="$PROJECT_DIR$/coil" />
+            <option value="$PROJECT_DIR$/constraint_layout" />
+            <option value="$PROJECT_DIR$/easyeventbus_api" />
+            <option value="$PROJECT_DIR$/easyeventbus_demo" />
+            <option value="$PROJECT_DIR$/easyeventbus_processor" />
+            <option value="$PROJECT_DIR$/easyrouter_annotation" />
+            <option value="$PROJECT_DIR$/easyrouter_api" />
+            <option value="$PROJECT_DIR$/easyrouter_demo" />
+            <option value="$PROJECT_DIR$/easyrouter_processor" />
+            <option value="$PROJECT_DIR$/glide" />
+            <option value="$PROJECT_DIR$/motion_event" />
+            <option value="$PROJECT_DIR$/motion_layout" />
+            <option value="$PROJECT_DIR$/retrofit" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

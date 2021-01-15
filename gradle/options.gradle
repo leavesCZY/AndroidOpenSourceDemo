@@ -10,8 +10,8 @@ if (FunctionExt.isAppModule()) {
     apply plugin: 'kotlin-kapt'
     doAndroid()
     doAndroidDependencies(dependencies_android)
-} else if (projectName == "easyeventbus-api" || projectName == "easyeventbus-processor"
-        || projectName == "easyrouter-processor" || projectName == "easyrouter-annotation") {
+} else if (projectName == "easyeventbus_api" || projectName == "easyeventbus_processor"
+        || projectName == "easyrouter_processor" || projectName == "easyrouter_annotation") {
     apply plugin: 'java-library'
     apply plugin: 'kotlin'
     java {

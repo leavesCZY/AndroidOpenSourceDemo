@@ -8,12 +8,10 @@ package github.leavesc.base
  */
 object EasyRouterPath {
 
-    const val PATH_HOME = "app/home"
+    const val PATH_EASY_ROUTER_MAIN = "easyRouterDemo/main"
 
-    const val PATH_SUB_PAGE = "app/subPage"
+    const val PATH_EASY_ROUTER_SUB_PAGE = "easyRouterDemo/subPage"
 
-    const val PATH_TEST_A = "RouterTest/testA"
-
-    const val PATH_RETROFIT = "retrofit/liveDataCall"
+    const val PATH_EASY_ROUTER_APP_MAIN_PAGE = "app/mainPage"
 
 }

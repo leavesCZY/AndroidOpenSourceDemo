@@ -5,10 +5,12 @@ import github.leavesc.base.BaseActivity
 import github.leavesc.base.EasyRouterPath
 import github.leavesc.coil.CoilMainActivity
 import github.leavesc.constraint_layout.ConstraintLayoutMainActivity
-import github.leavesc.demo.easyeventbus.EasyEventBusActivity
-import github.leavesc.easyrouter.EasyRouter
+import github.leavesc.easyeventbus_demo.EasyEventBusMainActivity
+import github.leavesc.easyrouter_annotation.Router
+import github.leavesc.easyrouter_api.EasyRouter
 import github.leavesc.glide.GlideActivity
 import github.leavesc.motion_layout.MotionLayoutMainActivity
+import github.leavesc.retrofit.LiveDataCallAdapterActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 /**
@@ -17,19 +19,20 @@ import kotlinx.android.synthetic.main.activity_main.*
  * 描述：
  * GitHub：https://github.com/leavesC
  */
+@Router(EasyRouterPath.PATH_EASY_ROUTER_APP_MAIN_PAGE)
 class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btn_easyEventBus.setOnClickListener {
-            startActivity(EasyEventBusActivity::class.java)
+            startActivity(EasyEventBusMainActivity::class.java)
         }
         btn_easyRouter.setOnClickListener {
-            EasyRouter.navigation(EasyRouterPath.PATH_HOME)
+            EasyRouter.navigation(EasyRouterPath.PATH_EASY_ROUTER_MAIN)
         }
         btn_liveDataCallAdapter.setOnClickListener {
-            EasyRouter.navigation(EasyRouterPath.PATH_RETROFIT)
+            startActivity(LiveDataCallAdapterActivity::class.java)
         }
         btn_glide.setOnClickListener {
             startActivity(GlideActivity::class.java)

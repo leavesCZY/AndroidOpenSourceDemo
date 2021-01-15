@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="github.leavesc.easyrouter_demo">
+
+    <application>
+        <activity android:name=".EasyRouterSubActivity" />
+        <activity android:name=".EasyRouterMainActivity" />
+    </application>
+
+</manifest>

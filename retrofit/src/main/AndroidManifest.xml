@@ -3,7 +3,7 @@
     package="github.leavesc.retrofit">
 
     <application>
-        <activity android:name=".LiveDataCallAdapterActivity"></activity>
+        <activity android:name=".LiveDataCallAdapterActivity" />
     </application>
 
 </manifest>

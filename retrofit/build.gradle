@@ -1,15 +1,6 @@
-kapt {
-    arguments {
-        arg("EASYROUTER_MODULE_NAME", project.getName())
-    }
-}
-
 dependencies {
     implementation dependencies_all['retrofit']
     implementation dependencies_all['retrofit-converter-gson']
     debugImplementation dependencies_all['monitor-debugImpl']
     releaseImplementation dependencies_all['monitor-releaseImpl']
-    implementation project(path: ':easyrouter-api')
-    implementation project(path: ':easyrouter-annotation')
-    kapt project(path: ':easyrouter-processor')
 }

@@ -3,7 +3,7 @@
     package="github.leavesc.coil">
 
     <application>
-        <activity android:name=".CoilMainActivity"></activity>
+        <activity android:name=".CoilMainActivity" />
     </application>
 
 </manifest>

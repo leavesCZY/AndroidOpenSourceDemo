@@ -19,9 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".easyeventbus.EasyEventBusActivity" />
-        <activity android:name=".easyrouter.EasyRouterHomeActivity" />
-        <activity android:name=".easyrouter.EasyRouterSubPageActivity" />
     </application>
 
 </manifest>

@@ -1,11 +1,8 @@
 package github.leavesc.retrofit
 
 import android.os.Bundle
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import github.leavesc.base.EasyRouterPath
-import github.leavesc.easyrouter.annotation.Router
+import github.leavesc.base.BaseActivity
 import github.leavesc.retrofit.http.RetrofitManager
 import kotlinx.android.synthetic.main.activity_live_data_call_adapter.*
 
@@ -15,8 +12,7 @@ import kotlinx.android.synthetic.main.activity_live_data_call_adapter.*
  * 描述：
  * GitHub：https://github.com/leavesC
  */
-@Router(EasyRouterPath.PATH_RETROFIT)
-class LiveDataCallAdapterActivity : AppCompatActivity() {
+class LiveDataCallAdapterActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,10 +35,6 @@ class LiveDataCallAdapterActivity : AppCompatActivity() {
                 }
             })
         }
-    }
-
-    private fun showToast(msg: String) {
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
     }
 
 }
