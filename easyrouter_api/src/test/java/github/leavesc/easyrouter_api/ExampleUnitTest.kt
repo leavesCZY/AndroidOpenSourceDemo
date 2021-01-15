@@ -1,4 +1,4 @@
-package github.leavesc.easyrouter_test
+package github.leavesc.easyrouter_api
 
 import org.junit.Test
 
