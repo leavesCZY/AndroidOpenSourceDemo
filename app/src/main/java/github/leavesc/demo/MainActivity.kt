@@ -9,6 +9,7 @@ import github.leavesc.easyeventbus_demo.EasyEventBusMainActivity
 import github.leavesc.easyrouter_annotation.Router
 import github.leavesc.easyrouter_api.EasyRouter
 import github.leavesc.glide.GlideActivity
+import github.leavesc.motion_event.MotionEventMainActivity
 import github.leavesc.motion_layout.MotionLayoutMainActivity
 import github.leavesc.retrofit.LiveDataCallAdapterActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -45,6 +46,9 @@ class MainActivity : BaseActivity() {
         }
         btn_motionLayout.setOnClickListener {
             startActivity(MotionLayoutMainActivity::class.java)
+        }
+        btn_motionEvent.setOnClickListener {
+            startActivity(MotionEventMainActivity::class.java)
         }
     }
 

@@ -15,5 +15,5 @@ dependencies {
     implementation project(path: ':coil')
     implementation project(path: ':constraint_layout')
     implementation project(path: ':motion_layout')
-
+    implementation project(path: ':motion_event')
 }

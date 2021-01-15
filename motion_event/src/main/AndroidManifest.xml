@@ -3,7 +3,8 @@
     package="github.leavesc.motion_event">
 
     <application>
-        <activity android:name=".MotionMainActivity" />
+        <activity android:name=".MotionEventDemoAActivity" />
+        <activity android:name=".MotionEventMainActivity" />
     </application>
 
 </manifest>
