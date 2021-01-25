@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<github.leavesc.motion_event.ExternalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_content_a" />
+
+        <include layout="@layout/item_content_a" />
+
+        <include layout="@layout/item_content_a" />
+
+        <include layout="@layout/item_content_a" />
+
+        <include layout="@layout/item_content_a" />
+
+        <include layout="@layout/item_content_a" />
+
+        <github.leavesc.motion_event.InsideScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_content_b" />
+
+                <include layout="@layout/item_content_b" />
+
+                <include layout="@layout/item_content_b" />
+
+                <include layout="@layout/item_content_b" />
+
+                <include layout="@layout/item_content_b" />
+
+                <include layout="@layout/item_content_b" />
+
+            </LinearLayout>
+
+        </github.leavesc.motion_event.InsideScrollView>
+
+        <include layout="@layout/item_content_a" />
+
+        <include layout="@layout/item_content_a" />
+
+        <include layout="@layout/item_content_a" />
+
+        <include layout="@layout/item_content_a" />
+
+        <include layout="@layout/item_content_a" />
+
+        <include layout="@layout/item_content_a" />
+
+    </LinearLayout>
+
+</github.leavesc.motion_event.ExternalScrollView>

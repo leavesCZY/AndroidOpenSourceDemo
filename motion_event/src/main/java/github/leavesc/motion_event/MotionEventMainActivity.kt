@@ -21,6 +21,9 @@ class MotionEventMainActivity : BaseActivity() {
         btn_demoB.setOnClickListener {
             startActivity(MotionEventDemoBActivity::class.java)
         }
+        btn_demoC.setOnClickListener {
+            startActivity(MotionEventDemoCActivity::class.java)
+        }
     }
 
 }

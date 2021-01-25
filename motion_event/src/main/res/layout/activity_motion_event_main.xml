@@ -14,6 +14,11 @@
     <Button
         android:id="@+id/btn_demoB"
         style="@style/BtnTheme"
-        android:text="滑动冲突实例" />
+        android:text="滑动冲突实例-外部拦截法" />
+
+    <Button
+        android:id="@+id/btn_demoC"
+        style="@style/BtnTheme"
+        android:text="滑动冲突实例-内部拦截法" />
 
 </LinearLayout>
