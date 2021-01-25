@@ -13,8 +13,7 @@
 
     <Button
         android:id="@+id/btn_load"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/BtnTheme"
         android:text="加载图片" />
 
 </LinearLayout>

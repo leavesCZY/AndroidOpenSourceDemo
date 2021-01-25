@@ -8,18 +8,12 @@
 
     <Button
         android:id="@+id/btn_demoA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="触摸事件"
-        android:textAllCaps="false" />
+        style="@style/BtnTheme"
+        android:text="触摸事件" />
 
     <Button
         android:id="@+id/btn_demoB"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="滑动冲突实例"
-        android:textAllCaps="false" />
+        style="@style/BtnTheme"
+        android:text="滑动冲突实例" />
 
 </LinearLayout>

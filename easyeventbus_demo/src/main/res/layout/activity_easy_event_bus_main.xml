@@ -8,18 +8,12 @@
 
     <Button
         android:id="@+id/btn_postString"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="postString"
-        android:textAllCaps="false" />
+        style="@style/BtnTheme"
+        android:text="postString" />
 
     <Button
         android:id="@+id/btn_postBean"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="postBean"
-        android:textAllCaps="false" />
+        style="@style/BtnTheme"
+        android:text="postBean" />
 
 </LinearLayout>

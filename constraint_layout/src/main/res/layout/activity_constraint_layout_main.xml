@@ -8,42 +8,27 @@
 
     <Button
         android:id="@+id/btn_flow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Flow"
-        android:textAllCaps="false" />
+        style="@style/BtnTheme"
+        android:text="Flow" />
 
     <Button
         android:id="@+id/btn_layer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Layer"
-        android:textAllCaps="false" />
+        style="@style/BtnTheme"
+        android:text="Layer" />
 
     <Button
         android:id="@+id/btn_constraintSet"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="ConstraintSet"
-        android:textAllCaps="false" />
+        style="@style/BtnTheme"
+        android:text="ConstraintSet" />
 
     <Button
         android:id="@+id/btn_circularRevealHelper"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="CircularRevealHelper"
-        android:textAllCaps="false" />
+        style="@style/BtnTheme"
+        android:text="CircularRevealHelper" />
 
     <Button
         android:id="@+id/btn_imageFilterView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="ImageFilterView"
-        android:textAllCaps="false" />
+        style="@style/BtnTheme"
+        android:text="ImageFilterView" />
 
 </LinearLayout>

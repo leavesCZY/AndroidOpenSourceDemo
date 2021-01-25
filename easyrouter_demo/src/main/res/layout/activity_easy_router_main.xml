@@ -17,20 +17,17 @@
 
     <Button
         android:id="@+id/btn_navToSubPage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/BtnTheme"
         android:text="跳转到相同模块的其它页面" />
 
     <Button
         android:id="@+id/btn_navToAppMainPage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/BtnTheme"
         android:text="跳转到主页面" />
 
     <Button
         android:id="@+id/btn_navToNothing"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/BtnTheme"
         android:text="跳转到非法页面" />
 
 </LinearLayout>

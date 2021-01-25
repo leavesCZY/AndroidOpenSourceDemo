@@ -29,16 +29,12 @@
 
     <Button
         android:id="@+id/btn_loadTokenUrl"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="加载图片"
-        android:textAllCaps="false" />
+        style="@style/BtnTheme"
+        android:text="加载图片" />
 
     <Button
         android:id="@+id/btn_downloadImage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="下载图片"
-        android:textAllCaps="false" />
+        style="@style/BtnTheme"
+        android:text="下载图片" />
 
 </LinearLayout>

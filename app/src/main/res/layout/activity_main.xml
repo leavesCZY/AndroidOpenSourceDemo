@@ -12,67 +12,43 @@
 
         <Button
             android:id="@+id/btn_easyEventBus"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="EasyEventBus"
-            android:textAllCaps="false" />
+            style="@style/BtnTheme"
+            android:text="EasyEventBus" />
 
         <Button
             android:id="@+id/btn_easyRouter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="EasyRouter"
-            android:textAllCaps="false" />
+            style="@style/BtnTheme"
+            android:text="EasyRouter" />
 
         <Button
             android:id="@+id/btn_liveDataCallAdapter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="LiveDataCallAdapter"
-            android:textAllCaps="false" />
+            style="@style/BtnTheme"
+            android:text="LiveDataCallAdapter" />
 
         <Button
             android:id="@+id/btn_glide"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="Glide"
-            android:textAllCaps="false" />
+            style="@style/BtnTheme"
+            android:text="Glide" />
 
         <Button
             android:id="@+id/btn_coil"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="Coil"
-            android:textAllCaps="false" />
+            style="@style/BtnTheme"
+            android:text="Coil" />
 
         <Button
             android:id="@+id/btn_constraintLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="ConstraintLayout"
-            android:textAllCaps="false" />
+            style="@style/BtnTheme"
+            android:text="ConstraintLayout" />
 
         <Button
             android:id="@+id/btn_motionLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="MotionLayout"
-            android:textAllCaps="false" />
+            style="@style/BtnTheme"
+            android:text="MotionLayout" />
 
         <Button
             android:id="@+id/btn_motionEvent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="MotionEvent"
-            android:textAllCaps="false" />
+            style="@style/BtnTheme"
+            android:text="MotionEvent" />
 
     </LinearLayout>
 
