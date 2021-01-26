@@ -49,14 +49,10 @@ class InsideScrollView @JvmOverloads constructor(
                     if (deltaY > 0) { //向下滑动
                         if (scrollY == 0) { //滑动到顶部了
                             parent.requestDisallowInterceptTouchEvent(false)
-                        } else {
-                            parent.requestDisallowInterceptTouchEvent(true)
                         }
                     } else { //向上滑动
                         if (height + scrollY >= computeVerticalScrollRange()) { //滑动到底部了
                             parent.requestDisallowInterceptTouchEvent(false)
-                        } else {
-                            parent.requestDisallowInterceptTouchEvent(true)
                         }
                     }
                 }
