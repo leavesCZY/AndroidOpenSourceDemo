@@ -8,6 +8,8 @@
 
 相关联的文章：
 
+[一文读懂 View 事件分发机制](https://juejin.cn/post/6931914294980411406)
+
 [一文快速入门 ConstraintLayout](https://juejin.cn/post/6911710012750430215)
 
 [三方库源码笔记（1）-EventBus 源码详解](https://juejin.im/post/6881265680465788936)
