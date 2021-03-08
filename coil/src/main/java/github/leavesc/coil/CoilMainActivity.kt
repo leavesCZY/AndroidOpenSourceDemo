@@ -25,7 +25,7 @@ class CoilMainActivity : BaseActivity() {
         btn_load.setOnClickListener {
             imageView.load(imageUrl) {
                 transformations(
-                    WatermarkTransformation("叶志陈", Color.parseColor("#8D3700B3"), 120f),
+                    WatermarkTransformation("业志陈", Color.parseColor("#8D3700B3"), 120f),
                     ColorFilterTransformation(Color.parseColor("#9CF44336"))
                 )
             }
