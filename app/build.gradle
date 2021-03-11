@@ -16,4 +16,5 @@ dependencies {
     implementation project(path: ':constraint_layout')
     implementation project(path: ':motion_layout')
     implementation project(path: ':motion_event')
+    implementation project(path: ':customview')
 }

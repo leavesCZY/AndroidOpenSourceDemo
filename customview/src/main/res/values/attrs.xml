@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WaveLoadingView">
+        <attr name="scaleWidth" format="float" />
+        <attr name="scaleHeight" format="float" />
+        <attr name="waveColor" format="color" />
+        <attr name="downTextColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="speed" format="integer" />
+        <attr name="centerText" format="string" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="github.leavesc.customview">
+
+    <application>
+        <activity android:name=".CustomViewMainActivity" />
+        <activity android:name=".CircleRefreshViewActivity" />
+        <activity android:name=".WaveViewActivity" />
+        <activity android:name=".ViewActivity" />
+    </application>
+
+</manifest>

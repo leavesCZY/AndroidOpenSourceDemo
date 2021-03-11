@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <github.leavesc.customview.view.WaveLoadingView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:centerText="业"
+            app:speed="1200"
+            app:textSize="150sp" />
+
+        <github.leavesc.customview.view.WaveLoadingView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:centerText="志"
+            app:speed="1100"
+            app:textSize="150sp"
+            app:waveColor="@color/purple_200" />
+
+        <github.leavesc.customview.view.WaveLoadingView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:centerText="陈"
+            app:scaleWidth="0.7"
+            app:speed="900"
+            app:textSize="150sp"
+            app:waveColor="#50a4f7" />
+
+        <github.leavesc.customview.view.WaveLoadingView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:centerText="龖"
+            app:speed="1200"
+            app:textSize="150sp"
+            app:waveColor="@color/purple_500" />
+
+    </LinearLayout>
+
+</ScrollView>

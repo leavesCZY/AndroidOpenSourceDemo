@@ -5,6 +5,7 @@ import github.leavesc.base.BaseActivity
 import github.leavesc.base.EasyRouterPath
 import github.leavesc.coil.CoilMainActivity
 import github.leavesc.constraint_layout.ConstraintLayoutMainActivity
+import github.leavesc.customview.CustomViewMainActivity
 import github.leavesc.easyeventbus_demo.EasyEventBusMainActivity
 import github.leavesc.easyrouter_annotation.Router
 import github.leavesc.easyrouter_api.EasyRouter
@@ -49,6 +50,9 @@ class MainActivity : BaseActivity() {
         }
         btn_motionEvent.setOnClickListener {
             startActivity(MotionEventMainActivity::class.java)
+        }
+        btn_customView.setOnClickListener {
+            startActivity(CustomViewMainActivity::class.java)
         }
     }
 

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WaveViewActivity">
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seekBarWidth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seekBarHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seekBarSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seekBarColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <github.leavesc.customview.view.WaveView
+        android:id="@+id/waveView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_coil_main.*
 class CoilMainActivity : BaseActivity() {
 
     private val imageUrl =
-        "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606024260370&di=3cf86afce4f2fb2ebac37488b966edc7&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201503%2F19%2F211608ztcq7higicydxhsy.jpg"
+        "https://t7.baidu.com/it/u=1298946193,2927992282&fm=193&f=GIF"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

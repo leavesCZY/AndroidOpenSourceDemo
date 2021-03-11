@@ -50,6 +50,11 @@
             style="@style/BtnTheme"
             android:text="MotionEvent" />
 
+        <Button
+            android:id="@+id/btn_customView"
+            style="@style/BtnTheme"
+            android:text="CustomView" />
+
     </LinearLayout>
 
 </ScrollView>

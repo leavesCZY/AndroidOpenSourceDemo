@@ -2,9 +2,7 @@
 
 存放了本人对于一些三方库的实践 Demo
 
-公众号：[**字节数组**](https://s3.ax1x.com/2021/02/18/yRiE4K.png)
-
-热衷于分享 Android 系统源码解析，Jetpack 源码解析、热门开源库源码解析等面试必备的知识点
+关注公众号：[**字节数组**](https://s3.ax1x.com/2021/02/18/yRiE4K.png)查看更多文章
 
 ![字节数组](https://s3.ax1x.com/2021/02/18/yRiE4K.png)
 
