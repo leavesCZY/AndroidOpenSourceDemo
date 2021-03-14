@@ -8,6 +8,8 @@
 
 相关联的文章：
 
+[一文读懂 View 的 Measure、Layout、Draw 流程](https://juejin.cn/post/6939387423994429448)
+
 [一文读懂 View 事件分发机制](https://juejin.cn/post/6931914294980411406)
 
 [一文快速入门 ConstraintLayout](https://juejin.cn/post/6911710012750430215)
