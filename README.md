@@ -1,10 +1,10 @@
 # AndroidOpenSourceDemo
 
-存放了本人对于一些三方库的实践 Demo
+存放了一些实践 Demo
 
-关注公众号：[**字节数组**](https://s3.ax1x.com/2021/02/18/yRiE4K.png)查看更多文章
+关注公众号：[**字节数组**](https://s3.ax1x.com/2021/02/18/yRiE4K.png) 查看更多文章
 
-![字节数组](https://s3.ax1x.com/2021/02/18/yRiE4K.png)
+![公众号：字节数组](https://s3.ax1x.com/2021/02/18/yRiE4K.png)
 
 相关联的文章：
 
