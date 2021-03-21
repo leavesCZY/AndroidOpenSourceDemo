@@ -2,7 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="github.leavesc.customview">
 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <application>
+        <service
+            android:name=".view.floatball.FloatBallViewService"
+            android:enabled="true"
+            android:exported="false" />
+
         <activity android:name=".CustomViewMainActivity" />
         <activity android:name=".CircleRefreshViewActivity" />
         <activity android:name=".WaveViewActivity" />

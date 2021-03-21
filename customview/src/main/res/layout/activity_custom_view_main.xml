@@ -36,6 +36,11 @@
             android:onClick="startTaiJiViewActivity"
             android:text="TaiJiView" />
 
+        <Button
+            style="@style/BtnTheme"
+            android:onClick="startFloatBallView"
+            android:text="FloatBallView" />
+
     </LinearLayout>
 
 </ScrollView>

@@ -11,10 +11,10 @@ import android.view.animation.LinearInterpolator
 import github.leavesc.customview.base.BaseView
 
 /**
- * 作者：leavesC
- * 时间：2020/03/12 01:05
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/03/12 01:05
+ * @GitHub：https://github.com/leavesC
+ * @Desc:
  */
 class CircleRefreshView @JvmOverloads constructor(
     context: Context,

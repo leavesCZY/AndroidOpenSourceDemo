@@ -1,16 +1,24 @@
 package github.leavesc.customview.utils
 
+import android.content.Context
 import android.graphics.Color
+import github.leavesc.base.ContextHolder
 import java.util.*
 import kotlin.random.Random
 
 /**
- * 作者：leavesC
- * 时间：2020/03/12 01:05
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/03/12 01:05
+ * @GitHub：https://github.com/leavesC
+ * @Desc:
  */
 object Utils {
+
+    val context: Context
+        get() = ContextHolder.context
+
+    val screenWidth: Int
+        get() = context.resources.displayMetrics.widthPixels
 
     fun getRandomColor(): String {
         var r: String = Integer.toHexString(Random.nextInt(256)).toUpperCase(Locale.ROOT)

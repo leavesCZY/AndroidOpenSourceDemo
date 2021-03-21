@@ -8,10 +8,10 @@ import github.leavesc.customview.widget.OnSeekBarChangeSimpleListener
 import kotlinx.android.synthetic.main.activity_circle_refresh_view.*
 
 /**
- * 作者：leavesC
- * 时间：2020/03/12 01:05
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/03/12 01:05
+ * @GitHub：https://github.com/leavesC
+ * @Desc:
  */
 class CircleRefreshViewActivity : BaseActivity() {
 
