@@ -40,14 +40,31 @@ def doAndroid() {
             versionCode 1
             versionName "1.0"
         }
+        signingConfigs {
+            releaseConfig {
+                storeFile file("..\\doc\\key.jks")
+                storePassword "123456"
+                keyAlias "leavesC"
+                keyPassword "123456"
+                v1SigningEnabled true
+                v2SigningEnabled true
+            }
+        }
         buildTypes {
             debug {
+                signingConfig signingConfigs.releaseConfig
                 minifyEnabled false
+                zipAlignEnabled false
+                shrinkResources false
                 debuggable true
                 proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             }
             release {
+                signingConfig signingConfigs.releaseConfig
                 minifyEnabled false
+                zipAlignEnabled false
+                shrinkResources false
+                debuggable false
                 proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             }
         }
@@ -57,6 +74,13 @@ def doAndroid() {
         }
         kotlinOptions {
             jvmTarget = JavaVersion.VERSION_1_8
+        }
+        configurations.all {
+            resolutionStrategy {
+//                failOnVersionConflict()
+                force dependencies_all['kotlin-stdlib']
+                force dependencies_all['okhttp']
+            }
         }
     }
 }

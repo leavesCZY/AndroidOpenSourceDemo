@@ -30,7 +30,7 @@ class ImageFilterViewActivity : BaseActivity() {
                     imageView5.round = realProgress * 40
                     imageView6.roundPercent = realProgress
 
-                    imageView7.crossfade = realProgress
+//                    imageView7.crossfade = 1f
                 }
             }
 

@@ -15,6 +15,7 @@ import kotlinx.coroutines.CancellableContinuation
 import kotlinx.coroutines.CompletionHandler
 import kotlinx.coroutines.suspendCancellableCoroutine
 import okhttp3.*
+import okhttp3.HttpUrl.Companion.toHttpUrl
 import java.io.IOException
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
@@ -39,7 +40,7 @@ class OkHttpFetcher(private val callFactory: Call.Factory) : Fetcher<Uri> {
         size: Size,
         options: Options
     ): FetchResult {
-        val url = HttpUrl.get(data.toString())
+        val url = data.toString().toHttpUrl()
         val request = Request.Builder().url(url).headers(options.headers)
 
         val networkRead = options.networkCachePolicy.readEnabled
@@ -61,15 +62,15 @@ class OkHttpFetcher(private val callFactory: Call.Factory) : Fetcher<Uri> {
 
         val response = callFactory.newCall(request.build()).await()
         if (!response.isSuccessful) {
-            response.body()?.close()
+            response.body?.close()
             throw HttpException(response)
         }
-        val body = checkNotNull(response.body()) { "Null response body!" }
+        val body = checkNotNull(response.body) { "Null response body!" }
 
         return SourceResult(
             source = body.source(),
             mimeType = getMimeType(url, body),
-            dataSource = if (response.cacheResponse() != null) DataSource.DISK else DataSource.NETWORK
+            dataSource = if (response.cacheResponse != null) DataSource.DISK else DataSource.NETWORK
         )
     }
 
@@ -115,7 +116,7 @@ class OkHttpFetcher(private val callFactory: Call.Factory) : Fetcher<Uri> {
         }
 
         override fun onFailure(call: Call, e: IOException) {
-            if (!call.isCanceled) {
+            if (!call.isCanceled()) {
                 continuation.resumeWithException(e)
             }
         }

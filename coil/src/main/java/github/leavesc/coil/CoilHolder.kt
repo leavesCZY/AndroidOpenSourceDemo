@@ -2,13 +2,11 @@ package github.leavesc.coil
 
 import android.app.Application
 import android.content.Context
-import androidx.core.app.ActivityCompat
 import coil.Coil
 import coil.ComponentRegistry
 import coil.ImageLoader
 import coil.request.CachePolicy
 import github.leavesc.coil.fetcher.OkHttpFetcher
-import github.leavesc.coil.fetcher.VolleyFetcher
 import okhttp3.Cache
 import okhttp3.OkHttpClient
 import java.io.File

@@ -3,7 +3,6 @@ package github.leavesc.glide.net
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
-import android.util.Log
 import okhttp3.MediaType
 import okhttp3.ResponseBody
 import okio.*
