@@ -3,7 +3,7 @@ package github.leavesc.constraint_layout
 import android.os.Bundle
 import android.widget.SeekBar
 import github.leavesc.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_image_filter_view.*
+import github.leavesc.constraint_layout.databinding.ActivityImageFilterViewBinding
 
 /**
  * @Author: leavesC
@@ -13,24 +13,25 @@ import kotlinx.android.synthetic.main.activity_image_filter_view.*
  */
 class ImageFilterViewActivity : BaseActivity() {
 
+    override val bind by getBind<ActivityImageFilterViewBinding>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_image_filter_view)
-        seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
+        bind.seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
                 if (fromUser) {
                     val realProgress = (progress / 100.0).toFloat()
 
-                    imageView1.saturation = realProgress * 20
-                    imageView2.brightness = 1 - realProgress
+                    bind.imageView1.saturation = realProgress * 20
+                    bind.imageView2.brightness = 1 - realProgress
 
-                    imageView3.warmth = realProgress * 20
-                    imageView4.contrast = realProgress * 2
+                    bind.imageView3.warmth = realProgress * 20
+                    bind.imageView4.contrast = realProgress * 2
 
-                    imageView5.round = realProgress * 40
-                    imageView6.roundPercent = realProgress
+                    bind.imageView5.round = realProgress * 40
+                    bind.imageView6.roundPercent = realProgress
 
-//                    imageView7.crossfade = 1f
+//                     bind.imageView7.crossfade = 1f
                 }
             }
 

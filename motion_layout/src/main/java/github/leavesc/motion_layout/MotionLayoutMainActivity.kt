@@ -2,7 +2,7 @@ package github.leavesc.motion_layout
 
 import android.os.Bundle
 import github.leavesc.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_motion_layout_main.*
+import github.leavesc.motion_layout.databinding.ActivityMotionLayoutMainBinding
 
 /**
  * @Author: leavesC
@@ -12,22 +12,23 @@ import kotlinx.android.synthetic.main.activity_motion_layout_main.*
  */
 class MotionLayoutMainActivity : BaseActivity() {
 
+    override val bind by getBind<ActivityMotionLayoutMainBinding>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_motion_layout_main)
-        btn_demoA.setOnClickListener {
+        bind.btnDemoA.setOnClickListener {
             startActivity(MotionLayoutDemoAActivity::class.java)
         }
-        btn_demoB.setOnClickListener {
+        bind.btnDemoB.setOnClickListener {
             startActivity(MotionLayoutDemoBActivity::class.java)
         }
-        btn_demoC.setOnClickListener {
+        bind.btnDemoC.setOnClickListener {
             startActivity(MotionLayoutDemoCActivity::class.java)
         }
-        btn_demoD.setOnClickListener {
+        bind.btnDemoD.setOnClickListener {
             startActivity(MotionLayoutDemoDActivity::class.java)
         }
-        btn_demoE.setOnClickListener {
+        bind.btnDemoE.setOnClickListener {
             startActivity(MotionLayoutDemoEActivity::class.java)
         }
     }

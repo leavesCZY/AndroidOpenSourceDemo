@@ -36,11 +36,13 @@ class LiveDataCallAdapter<R>(private val responseType: Type) : CallAdapter<R, Li
                                 postValue(response.body())
                             } else {
                                 //失败状态，返回格式化好的 HttpWrapBean 对象
-                                postValue(HttpWrapBean.error(
-                                    ServerCodeNoSuccessException(
-                                        body
-                                    )
-                                ) as R)
+                                postValue(
+                                    HttpWrapBean.error(
+                                        ServerCodeNoSuccessException(
+                                            body
+                                        )
+                                    ) as R
+                                )
                             }
                         }
 

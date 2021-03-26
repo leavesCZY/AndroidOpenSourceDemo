@@ -9,7 +9,7 @@ package github.leavesc.motion_layout
 class MotionLayoutDemoBActivity : MotionLayoutDemoAActivity() {
 
     override fun getContentViewId(): Int {
-        return R.layout.activity_motion_layout_demo_bactivity
+        return R.layout.activity_motion_layout_demo_b
     }
 
 }

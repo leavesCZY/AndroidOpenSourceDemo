@@ -3,6 +3,7 @@ package github.leavesc.customview
 import android.content.Intent
 import android.os.Bundle
 import androidx.annotation.LayoutRes
+import androidx.appcompat.app.AppCompatActivity
 import github.leavesc.base.BaseActivity
 
 /**
@@ -11,7 +12,7 @@ import github.leavesc.base.BaseActivity
  * @GitHub：https://github.com/leavesC
  * @Desc:
  */
-class ViewActivity : BaseActivity() {
+class ViewActivity : AppCompatActivity() {
 
     companion object {
 

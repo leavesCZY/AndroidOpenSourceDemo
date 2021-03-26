@@ -1,17 +1,13 @@
 apply from: "${rootDir}${File.separator}gradle${File.separator}function.gradle"
 apply from: "${rootDir}${File.separator}gradle${File.separator}dependencies.gradle"
 
-def projectName = project.name
-
 if (FunctionExt.isAppModule()) {
     apply plugin: 'com.android.application'
     apply plugin: 'kotlin-android'
-    apply plugin: 'kotlin-android-extensions'
     apply plugin: 'kotlin-kapt'
     doAndroid()
     doAndroidDependencies(dependencies_android)
-} else if (projectName == "easyeventbus_api" || projectName == "easyeventbus_processor"
-        || projectName == "easyrouter_processor" || projectName == "easyrouter_annotation") {
+} else if (FunctionExt.isJavaModule()) {
     apply plugin: 'java-library'
     apply plugin: 'kotlin'
     java {
@@ -21,7 +17,6 @@ if (FunctionExt.isAppModule()) {
 } else {
     apply plugin: 'com.android.library'
     apply plugin: 'kotlin-android'
-    apply plugin: 'kotlin-android-extensions'
     apply plugin: 'kotlin-kapt'
     doAndroid()
     doAndroidDependencies(dependencies_android)
@@ -81,6 +76,9 @@ def doAndroid() {
                 force dependencies_all['kotlin-stdlib']
                 force dependencies_all['okhttp']
             }
+        }
+        buildFeatures {
+            viewBinding = true
         }
     }
 }

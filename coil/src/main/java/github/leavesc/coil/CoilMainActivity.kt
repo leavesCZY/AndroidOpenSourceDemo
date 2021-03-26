@@ -4,9 +4,9 @@ import android.graphics.Color
 import android.os.Bundle
 import coil.load
 import github.leavesc.base.BaseActivity
+import github.leavesc.coil.databinding.ActivityCoilMainBinding
 import github.leavesc.coil.transformation.ColorFilterTransformation
 import github.leavesc.coil.transformation.WatermarkTransformation
-import kotlinx.android.synthetic.main.activity_coil_main.*
 
 /**
  * @Author: leavesC
@@ -19,11 +19,12 @@ class CoilMainActivity : BaseActivity() {
     private val imageUrl =
         "https://t7.baidu.com/it/u=1298946193,2927992282&fm=193&f=GIF"
 
+    override val bind by getBind<ActivityCoilMainBinding>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_coil_main)
-        btn_load.setOnClickListener {
-            imageView.load(imageUrl) {
+        bind.btnLoad.setOnClickListener {
+            bind.imageView.load(imageUrl) {
                 transformations(
                     WatermarkTransformation("业志陈", Color.parseColor("#8D3700B3"), 120f),
                     ColorFilterTransformation(Color.parseColor("#9CF44336"))

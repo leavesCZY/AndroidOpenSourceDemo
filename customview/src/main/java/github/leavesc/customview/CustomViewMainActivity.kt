@@ -3,10 +3,10 @@ package github.leavesc.customview
 import android.content.Intent
 import android.net.Uri
 import android.os.Build
-import android.os.Bundle
 import android.provider.Settings
 import android.view.View
 import github.leavesc.base.BaseActivity
+import github.leavesc.customview.databinding.ActivityCustomViewMainBinding
 import github.leavesc.customview.view.floatball.FloatBallViewService
 
 /**
@@ -17,10 +17,7 @@ import github.leavesc.customview.view.floatball.FloatBallViewService
  */
 class CustomViewMainActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_custom_view_main)
-    }
+    override val bind by getBind<ActivityCustomViewMainBinding>()
 
     fun startWaveViewActivity(view: View) {
         startActivity(WaveViewActivity::class.java)

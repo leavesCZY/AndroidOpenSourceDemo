@@ -7,27 +7,27 @@
     tools:context=".MotionLayoutMainActivity">
 
     <Button
-        android:id="@+id/btn_demoA"
+        android:id="@+id/btnDemoA"
         style="@style/BtnTheme"
         android:text="飞跃星空火箭" />
 
     <Button
-        android:id="@+id/btn_demoB"
+        android:id="@+id/btnDemoB"
         style="@style/BtnTheme"
         android:text="飞跃星空火箭-收缩" />
 
     <Button
-        android:id="@+id/btn_demoC"
+        android:id="@+id/btnDemoC"
         style="@style/BtnTheme"
         android:text="动态背景" />
 
     <Button
-        android:id="@+id/btn_demoD"
+        android:id="@+id/btnDemoD"
         style="@style/BtnTheme"
         android:text="顶部位移收缩" />
 
     <Button
-        android:id="@+id/btn_demoE"
+        android:id="@+id/btnDemoE"
         style="@style/BtnTheme"
         android:text="渐变的方块" />
 

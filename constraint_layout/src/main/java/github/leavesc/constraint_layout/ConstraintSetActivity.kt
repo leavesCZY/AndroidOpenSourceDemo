@@ -5,7 +5,7 @@ import android.transition.TransitionManager
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintSet
 import github.leavesc.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_constraint_set.*
+import github.leavesc.constraint_layout.databinding.ActivityConstraintSetBinding
 
 /**
  * @Author: leavesC
@@ -21,6 +21,8 @@ class ConstraintSetActivity : BaseActivity() {
 
     }
 
+    override val bind by getBind<ActivityConstraintSetBinding>()
+
     private var showBigImage = false
 
     private val constraintSetNormal = ConstraintSet()
@@ -29,9 +31,8 @@ class ConstraintSetActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_constraint_set)
         //获取初始的约束集
-        constraintSetNormal.clone(cl_rootView)
+        constraintSetNormal.clone(bind.clRootView)
         //加载目标约束集
         constraintSetBig.load(this, R.layout.activity_constraint_set_big)
         if (savedInstanceState != null) {
@@ -49,7 +50,7 @@ class ConstraintSetActivity : BaseActivity() {
     }
 
     fun toggleMode(view: View) {
-        TransitionManager.beginDelayedTransition(cl_rootView)
+        TransitionManager.beginDelayedTransition(bind.clRootView)
         showBigImage = !showBigImage
         applyConfig()
     }
@@ -57,9 +58,9 @@ class ConstraintSetActivity : BaseActivity() {
     //将约束集应用到控件上
     private fun applyConfig() {
         if (showBigImage) {
-            constraintSetBig.applyTo(cl_rootView)
+            constraintSetBig.applyTo(bind.clRootView)
         } else {
-            constraintSetNormal.applyTo(cl_rootView)
+            constraintSetNormal.applyTo(bind.clRootView)
         }
     }
 

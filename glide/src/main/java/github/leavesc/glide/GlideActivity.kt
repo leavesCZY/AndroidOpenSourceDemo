@@ -8,9 +8,9 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
 import github.leavesc.base.BaseActivity
+import github.leavesc.glide.databinding.ActivityGlideBinding
 import github.leavesc.glide.net.ProgressResponseBody
 import github.leavesc.glide.net.TokenGlideUrl
-import kotlinx.android.synthetic.main.activity_glide.*
 
 /**
  * 作者：leavesC
@@ -20,28 +20,29 @@ import kotlinx.android.synthetic.main.activity_glide.*
  */
 class GlideActivity : BaseActivity() {
 
+    override val bind by getBind<ActivityGlideBinding>()
+
     private val url =
         "https://images.pexels.com/photos/5177790/pexels-photo-5177790.jpeg?auto=compress&token=tokenValue"
 
     private val progressListener = object : ProgressResponseBody.ProgressListener {
         override fun update(progress: Int) {
-            progressBar.progress = progress
-            tv_progress.text = progress.toString()
+            bind.progressBar.progress = progress
+            bind.tvProgress.text = progress.toString()
         }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_glide)
         ProgressResponseBody.addProgressListener(url, progressListener)
-        btn_loadTokenUrl.setOnClickListener {
+        bind.btnLoadTokenUrl.setOnClickListener {
             Glide.with(this).load(TokenGlideUrl(url))
                 .placeholder(android.R.drawable.presence_away)
                 .skipMemoryCache(true)
                 .diskCacheStrategy(DiskCacheStrategy.NONE)
-                .into(iv_tokenUrl)
+                .into(bind.ivTokenUrl)
         }
-        btn_downloadImage.setOnClickListener {
+        bind.btnDownloadImage.setOnClickListener {
             Glide.with(this)
                 .asBitmap()
                 .load(url)
@@ -54,7 +55,7 @@ class GlideActivity : BaseActivity() {
                         resource: Bitmap,
                         transition: Transition<in Bitmap>?
                     ) {
-                        iv_tokenUrl.setImageBitmap(resource)
+                        bind.ivTokenUrl.setImageBitmap(resource)
                     }
                 })
         }

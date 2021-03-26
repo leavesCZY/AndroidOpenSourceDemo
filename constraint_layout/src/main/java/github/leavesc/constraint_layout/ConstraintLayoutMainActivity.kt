@@ -2,7 +2,7 @@ package github.leavesc.constraint_layout
 
 import android.os.Bundle
 import github.leavesc.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_constraint_layout_main.*
+import github.leavesc.constraint_layout.databinding.ActivityConstraintLayoutMainBinding
 
 /**
  * @Author: leavesC
@@ -12,22 +12,23 @@ import kotlinx.android.synthetic.main.activity_constraint_layout_main.*
  */
 class ConstraintLayoutMainActivity : BaseActivity() {
 
+    override val bind by getBind<ActivityConstraintLayoutMainBinding>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_constraint_layout_main)
-        btn_flow.setOnClickListener {
+        bind.btnFlow.setOnClickListener {
             startActivity(FlowActivity::class.java)
         }
-        btn_layer.setOnClickListener {
+        bind.btnLayer.setOnClickListener {
             startActivity(LayerActivity::class.java)
         }
-        btn_constraintSet.setOnClickListener {
+        bind.btnConstraintSet.setOnClickListener {
             startActivity(ConstraintSetActivity::class.java)
         }
-        btn_circularRevealHelper.setOnClickListener {
+        bind.btnCircularRevealHelper.setOnClickListener {
             startActivity(ConstraintHelperActivity::class.java)
         }
-        btn_imageFilterView.setOnClickListener {
+        bind.btnImageFilterView.setOnClickListener {
             startActivity(ImageFilterViewActivity::class.java)
         }
     }

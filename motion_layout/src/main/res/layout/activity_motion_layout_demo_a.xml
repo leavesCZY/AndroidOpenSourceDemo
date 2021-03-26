@@ -8,7 +8,7 @@
     tools:context=".MotionLayoutDemoAActivity">
 
     <androidx.constraintlayout.motion.widget.MotionLayout
-        android:id="@+id/motion_layout"
+        android:id="@+id/motionLayout"
         android:layout_width="match_parent"
         android:layout_height="160dp"
         app:layoutDescription="@xml/scene_demo_a">

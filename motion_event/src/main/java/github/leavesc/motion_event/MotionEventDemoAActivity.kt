@@ -1,8 +1,8 @@
 package github.leavesc.motion_event
 
-import android.os.Bundle
 import android.view.MotionEvent
 import github.leavesc.base.BaseActivity
+import github.leavesc.motion_event.databinding.ActivityMotionEventDemoABinding
 
 /**
  * 作者：leavesC
@@ -12,10 +12,7 @@ import github.leavesc.base.BaseActivity
  */
 class MotionEventDemoAActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_motion_event_demo_aactivity)
-    }
+    override val bind by getBind<ActivityMotionEventDemoABinding>()
 
     override fun dispatchTouchEvent(event: MotionEvent): Boolean {
         when (event.action) {

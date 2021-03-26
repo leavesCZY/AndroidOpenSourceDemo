@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.SeekBar
 import github.leavesc.base.BaseActivity
+import github.leavesc.customview.databinding.ActivityCircleRefreshViewBinding
 import github.leavesc.customview.widget.OnSeekBarChangeSimpleListener
-import kotlinx.android.synthetic.main.activity_circle_refresh_view.*
 
 /**
  * @Author: leavesC
@@ -15,31 +15,32 @@ import kotlinx.android.synthetic.main.activity_circle_refresh_view.*
  */
 class CircleRefreshViewActivity : BaseActivity() {
 
+    override val bind by getBind<ActivityCircleRefreshViewBinding>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_circle_refresh_view)
-        seekBarDrag.max = 100
-        seekBarDrag.setOnSeekBarChangeListener(object : OnSeekBarChangeSimpleListener() {
+        bind.seekBarDrag.max = 100
+        bind.seekBarDrag.setOnSeekBarChangeListener(object : OnSeekBarChangeSimpleListener() {
             override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
-                circleRefreshView.drag(progress / 100f)
+                bind.circleRefreshView.drag(progress / 100f)
             }
         })
-        seekBarSeed.max = 100
-        seekBarSeed.setOnSeekBarChangeListener(object : OnSeekBarChangeSimpleListener() {
+        bind.seekBarSeed.max = 100
+        bind.seekBarSeed.setOnSeekBarChangeListener(object : OnSeekBarChangeSimpleListener() {
             override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
-                circleRefreshView.speed = (progress * 40).toLong()
+                bind.circleRefreshView.speed = (progress * 40).toLong()
             }
         })
-        seekBarSeed.progress = (circleRefreshView.speed / 40).toInt()
+        bind.seekBarSeed.progress = (bind.circleRefreshView.speed / 40).toInt()
     }
 
     fun onClick(view: View) {
         when (view.id) {
             R.id.btnStart -> {
-                circleRefreshView.startAnimator()
+                bind.circleRefreshView.startAnimator()
             }
             R.id.btnStop -> {
-                circleRefreshView.stopAnimator()
+                bind.circleRefreshView.stopAnimator()
             }
         }
     }

@@ -12,7 +12,7 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/btn_load"
+        android:id="@+id/btnLoad"
         style="@style/BtnTheme"
         android:text="加载图片" />
 

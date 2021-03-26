@@ -4,7 +4,7 @@ import android.animation.ValueAnimator
 import android.os.Bundle
 import androidx.constraintlayout.helper.widget.Layer
 import github.leavesc.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_layer.*
+import github.leavesc.constraint_layout.databinding.ActivityLayerBinding
 import kotlin.math.abs
 import kotlin.math.sin
 
@@ -16,10 +16,11 @@ import kotlin.math.sin
  */
 class LayerActivity : BaseActivity() {
 
+    override val bind by getBind<ActivityLayerBinding>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_layer)
-        btn_test.setOnClickListener {
+        bind.btnTest.setOnClickListener {
             val layer = findViewById<Layer>(R.id.layer)
             val animator = ValueAnimator.ofFloat(0f, 360f)
             animator.addUpdateListener { animation ->

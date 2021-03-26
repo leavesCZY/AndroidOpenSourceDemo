@@ -3,8 +3,8 @@ package github.leavesc.retrofit
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import github.leavesc.base.BaseActivity
+import github.leavesc.retrofit.databinding.ActivityLiveDataCallAdapterBinding
 import github.leavesc.retrofit.http.RetrofitManager
-import kotlinx.android.synthetic.main.activity_live_data_call_adapter.*
 
 /**
  * 作者：leavesC
@@ -14,10 +14,11 @@ import kotlinx.android.synthetic.main.activity_live_data_call_adapter.*
  */
 class LiveDataCallAdapterActivity : BaseActivity() {
 
+    override val bind by getBind<ActivityLiveDataCallAdapterBinding>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_live_data_call_adapter)
-        btn_success.setOnClickListener {
+        bind.btnSuccess.setOnClickListener {
             RetrofitManager.apiService.getUserDataSuccess().observe(this, Observer {
                 if (it.isSuccess) {
                     showToast(it.toString())
@@ -26,7 +27,7 @@ class LiveDataCallAdapterActivity : BaseActivity() {
                 }
             })
         }
-        btn_failed.setOnClickListener {
+        bind.btnFailed.setOnClickListener {
             RetrofitManager.apiService.getUserDataFailed().observe(this, Observer {
                 if (it.isSuccess) {
                     showToast(it.toString())

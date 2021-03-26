@@ -2,7 +2,7 @@ package github.leavesc.motion_event
 
 import android.os.Bundle
 import github.leavesc.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_motion_event_main.*
+import github.leavesc.motion_event.databinding.ActivityMotionEventMainBinding
 
 /**
  * 作者：leavesC
@@ -12,16 +12,17 @@ import kotlinx.android.synthetic.main.activity_motion_event_main.*
  */
 class MotionEventMainActivity : BaseActivity() {
 
+    override val bind by getBind<ActivityMotionEventMainBinding>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_motion_event_main)
-        btn_demoA.setOnClickListener {
+        bind.btnDemoA.setOnClickListener {
             startActivity(MotionEventDemoAActivity::class.java)
         }
-        btn_demoB.setOnClickListener {
+        bind.btnDemoB.setOnClickListener {
             startActivity(MotionEventDemoBActivity::class.java)
         }
-        btn_demoC.setOnClickListener {
+        bind.btnDemoC.setOnClickListener {
             startActivity(MotionEventDemoCActivity::class.java)
         }
     }

@@ -1,7 +1,7 @@
 package github.leavesc.constraint_layout
 
-import android.os.Bundle
 import github.leavesc.base.BaseActivity
+import github.leavesc.constraint_layout.databinding.ActivityConstraintHelperBinding
 
 /**
  * @Author: leavesC
@@ -11,9 +11,6 @@ import github.leavesc.base.BaseActivity
  */
 class ConstraintHelperActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_constraint_helper)
-    }
+    override val bind by getBind<ActivityConstraintHelperBinding>()
 
 }

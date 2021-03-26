@@ -7,22 +7,22 @@
     tools:context=".ConstraintLayoutMainActivity">
 
     <Button
-        android:id="@+id/btn_flow"
+        android:id="@+id/btnFlow"
         style="@style/BtnTheme"
         android:text="Flow" />
 
     <Button
-        android:id="@+id/btn_layer"
+        android:id="@+id/btnLayer"
         style="@style/BtnTheme"
         android:text="Layer" />
 
     <Button
-        android:id="@+id/btn_constraintSet"
+        android:id="@+id/btnConstraintSet"
         style="@style/BtnTheme"
         android:text="ConstraintSet" />
 
     <Button
-        android:id="@+id/btn_circularRevealHelper"
+        android:id="@+id/btnCircularRevealHelper"
         style="@style/BtnTheme"
         android:text="CircularRevealHelper" />
 

@@ -2,9 +2,12 @@ package github.leavesc.base
 
 import android.app.Activity
 import android.content.Intent
+import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.viewbinding.ViewBinding
 
 /**
  * @Author: leavesC
@@ -12,7 +15,24 @@ import androidx.appcompat.app.AppCompatActivity
  * @Desc:
  * @Github：https://github.com/leavesC
  */
-open class BaseActivity : AppCompatActivity() {
+abstract class BaseActivity : AppCompatActivity() {
+
+    abstract val bind: ViewBinding?
+
+    protected inline fun <reified T> getBind(): Lazy<T> where T : ViewBinding {
+        return lazy {
+            val clazz = T::class.java
+            val method = clazz.getMethod("inflate", LayoutInflater::class.java)
+            method.invoke(null, layoutInflater) as T
+        }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        bind?.root?.apply {
+            setContentView(this)
+        }
+    }
 
     protected fun <T : Activity> startActivity(clazz: Class<T>) {
         startActivity(Intent(this, clazz))

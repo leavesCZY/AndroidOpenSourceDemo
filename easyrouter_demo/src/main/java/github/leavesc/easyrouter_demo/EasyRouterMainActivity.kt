@@ -5,7 +5,7 @@ import github.leavesc.base.BaseActivity
 import github.leavesc.base.EasyRouterPath
 import github.leavesc.easyrouter_annotation.Router
 import github.leavesc.easyrouter_api.EasyRouter
-import kotlinx.android.synthetic.main.activity_easy_router_main.*
+import github.leavesc.easyrouter_demo.databinding.ActivityEasyRouterMainBinding
 
 /**
  * 作者：leavesC
@@ -16,16 +16,17 @@ import kotlinx.android.synthetic.main.activity_easy_router_main.*
 @Router(EasyRouterPath.PATH_EASY_ROUTER_MAIN)
 class EasyRouterMainActivity : BaseActivity() {
 
+    override val bind by getBind<ActivityEasyRouterMainBinding>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_easy_router_main)
-        btn_navToSubPage.setOnClickListener {
+        bind.btnNavToSubPage.setOnClickListener {
             EasyRouter.navigation(EasyRouterPath.PATH_EASY_ROUTER_SUB_PAGE)
         }
-        btn_navToAppMainPage.setOnClickListener {
+        bind.btnNavToAppMainPage.setOnClickListener {
             EasyRouter.navigation(EasyRouterPath.PATH_EASY_ROUTER_APP_MAIN_PAGE)
         }
-        btn_navToNothing.setOnClickListener {
+        bind.btnNavToNothing.setOnClickListener {
             EasyRouter.navigation("test/nothing")
         }
     }

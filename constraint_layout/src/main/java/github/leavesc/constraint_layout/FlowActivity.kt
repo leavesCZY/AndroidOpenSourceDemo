@@ -2,6 +2,7 @@ package github.leavesc.constraint_layout
 
 import android.os.Bundle
 import github.leavesc.base.BaseActivity
+import github.leavesc.constraint_layout.databinding.ActivityFlowBinding
 
 /**
  * @Author: leavesC
@@ -10,6 +11,8 @@ import github.leavesc.base.BaseActivity
  * @Github：https://github.com/leavesC
  */
 class FlowActivity : BaseActivity() {
+
+    override val bind by getBind<ActivityFlowBinding>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -7,12 +7,12 @@
     tools:context=".LiveDataCallAdapterActivity">
 
     <Button
-        android:id="@+id/btn_success"
+        android:id="@+id/btnSuccess"
         style="@style/BtnTheme"
         android:text="成功示例" />
 
     <Button
-        android:id="@+id/btn_failed"
+        android:id="@+id/btnFailed"
         style="@style/BtnTheme"
         android:text="失败示例" />
 

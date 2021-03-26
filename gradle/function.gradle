@@ -5,6 +5,10 @@ ext.FunctionExt = [
         isAppModule                   : {
             return FunctionExt.projectName() == "app"
         },
+        isJavaModule                  : {
+            def projectName = project.name
+            return projectName == "easyeventbus_api" || projectName == "easyeventbus_processor" || projectName == "easyrouter_processor" || projectName == "easyrouter_annotation"
+        },
         getPropertiesEntity           : { filePath ->
             def properties = new Properties()
             def inputStream = null

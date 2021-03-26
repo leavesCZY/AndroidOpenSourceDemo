@@ -7,14 +7,14 @@
     tools:context=".GlideActivity">
 
     <ImageView
-        android:id="@+id/iv_tokenUrl"
+        android:id="@+id/ivTokenUrl"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:contentDescription="Glide"
         tools:background="#abc" />
 
     <TextView
-        android:id="@+id/tv_progress"
+        android:id="@+id/tvProgress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp" />
@@ -28,12 +28,12 @@
         android:max="100" />
 
     <Button
-        android:id="@+id/btn_loadTokenUrl"
+        android:id="@+id/btnLoadTokenUrl"
         style="@style/BtnTheme"
         android:text="加载图片" />
 
     <Button
-        android:id="@+id/btn_downloadImage"
+        android:id="@+id/btnDownloadImage"
         style="@style/BtnTheme"
         android:text="下载图片" />
 

@@ -1,11 +1,10 @@
 package github.leavesc.motion_event
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import github.leavesc.base.BaseActivity
+import github.leavesc.motion_event.databinding.ActivityMotionEventDemoCBinding
 
-class MotionEventDemoCActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_motion_event_demo_cactivity)
-    }
+class MotionEventDemoCActivity : BaseActivity() {
+
+    override val bind by getBind<ActivityMotionEventDemoCBinding>()
+
 }

@@ -1,7 +1,7 @@
 package github.leavesc.motion_layout
 
-import android.os.Bundle
 import github.leavesc.base.BaseActivity
+import github.leavesc.motion_layout.databinding.ActivityMotionLayoutDemoEBinding
 
 /**
  * @Author: leavesC
@@ -11,9 +11,6 @@ import github.leavesc.base.BaseActivity
  */
 class MotionLayoutDemoEActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_motion_layout_demo_eactivity)
-    }
+    override val bind by getBind<ActivityMotionLayoutDemoEBinding>()
 
 }

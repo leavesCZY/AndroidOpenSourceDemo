@@ -5,7 +5,7 @@ import github.leavesc.base.BaseActivity
 import github.leavesc.base.showToast
 import github.leavesc.easyeventbus_api.EasyEventBus
 import github.leavesc.easyeventbus_api.Event
-import kotlinx.android.synthetic.main.activity_easy_event_bus_main.*
+import github.leavesc.easyeventbus_demo.databinding.ActivityEasyEventBusMainBinding
 
 /**
  * 作者：leavesC
@@ -15,18 +15,18 @@ import kotlinx.android.synthetic.main.activity_easy_event_bus_main.*
  */
 class EasyEventBusMainActivity : BaseActivity() {
 
+    override val bind by getBind<ActivityEasyEventBusMainBinding>()
+
     private val eventTest = EasyBusEventTest()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_easy_event_bus_main)
         EasyEventBus.register(this)
         eventTest.register()
-
-        btn_postString.setOnClickListener {
+        bind.btnPostString.setOnClickListener {
             EasyEventBus.post("Hello")
         }
-        btn_postBean.setOnClickListener {
+        bind.btnPostBean.setOnClickListener {
             EasyEventBus.post(HelloBean("hi"))
         }
     }

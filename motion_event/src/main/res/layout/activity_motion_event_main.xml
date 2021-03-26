@@ -7,18 +7,18 @@
     tools:context=".MotionEventMainActivity">
 
     <Button
-        android:id="@+id/btn_demoA"
+        android:id="@+id/btnDemoA"
         style="@style/BtnTheme"
         android:text="触摸事件" />
 
     <Button
-        android:id="@+id/btn_demoB"
+        android:id="@+id/btnDemoB"
         style="@style/BtnTheme"
         android:text="滑动冲突实例-外部拦截法"
         android:visibility="gone" />
 
     <Button
-        android:id="@+id/btn_demoC"
+        android:id="@+id/btnDemoC"
         style="@style/BtnTheme"
         android:text="滑动冲突实例-内部拦截法" />
 

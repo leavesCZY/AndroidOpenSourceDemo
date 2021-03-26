@@ -4,15 +4,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.viewbinding.ViewBinding
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import github.leavesc.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_motion_layout_demo_aactivity.*
 
 /**
  * @Author: leavesC
@@ -22,9 +24,14 @@ import kotlinx.android.synthetic.main.activity_motion_layout_demo_aactivity.*
  */
 open class MotionLayoutDemoAActivity : BaseActivity() {
 
+    override val bind: ViewBinding? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(getContentViewId())
+        val viewPager = findViewById<ViewPager2>(R.id.viewPager)
+        val tabLayout = findViewById<TabLayout>(R.id.tabLayout)
+        val motionLayout = findViewById<MotionLayout>(R.id.motionLayout)
         val fragmentAdapter = FunFragmentAdapter(this)
         viewPager.adapter = FunFragmentAdapter(this)
         val tabLayoutMediator = TabLayoutMediator(tabLayout, viewPager) { tab, position ->
@@ -38,13 +45,13 @@ open class MotionLayoutDemoAActivity : BaseActivity() {
                 positionOffsetPixels: Int
             ) {
                 val progress = (position + positionOffset) / (fragmentAdapter.itemCount - 1)
-                motion_layout.progress = progress
+                motionLayout.progress = progress
             }
         })
     }
 
     protected open fun getContentViewId(): Int {
-        return R.layout.activity_motion_layout_demo_aactivity
+        return R.layout.activity_motion_layout_demo_a
     }
 
 }
