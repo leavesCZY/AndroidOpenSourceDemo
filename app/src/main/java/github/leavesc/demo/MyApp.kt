@@ -7,10 +7,10 @@ import github.leavesc.easyrouter_api.EasyRouter
 import github.leavesc.retrofit.http.RetrofitManager
 
 /**
- * 作者：leavesC
- * 时间：2020/10/2 13:19
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/10/2 13:19
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 class MyApp : Application() {
 

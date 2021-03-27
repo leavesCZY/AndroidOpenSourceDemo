@@ -8,10 +8,10 @@ import github.leavesc.easyrouter_api.EasyRouter
 import github.leavesc.easyrouter_demo.databinding.ActivityEasyRouterMainBinding
 
 /**
- * 作者：leavesC
- * 时间：2021/1/15 23:53
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2021/1/15 23:53
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 @Router(EasyRouterPath.PATH_EASY_ROUTER_MAIN)
 class EasyRouterMainActivity : BaseActivity() {

@@ -1,10 +1,10 @@
 package github.leavesc.base
 
 /**
- * 作者：leavesC
- * 时间：2020/10/5 23:33
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/10/5 23:33
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 object EasyRouterPath {
 

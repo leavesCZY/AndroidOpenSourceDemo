@@ -9,10 +9,10 @@ import android.widget.RelativeLayout
 import androidx.appcompat.widget.AppCompatTextView
 
 /**
- * 作者：leavesC
- * 时间：2021/1/16 0:34
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2021/1/16 0:34
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 class MyRelativeLayout @JvmOverloads constructor(
     context: Context,

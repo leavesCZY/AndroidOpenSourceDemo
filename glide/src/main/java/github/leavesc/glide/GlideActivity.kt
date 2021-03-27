@@ -13,10 +13,10 @@ import github.leavesc.glide.net.ProgressResponseBody
 import github.leavesc.glide.net.TokenGlideUrl
 
 /**
- * 作者：leavesC
- * 时间：2020/11/5 23:00
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/11/5 23:00
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 class GlideActivity : BaseActivity() {
 

@@ -8,10 +8,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 /**
- * 作者：leavesC
- * 时间：2020/10/22 20:47
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/10/22 20:47
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 object RetrofitManager {
 

@@ -5,10 +5,10 @@ import github.leavesc.base.BaseActivity
 import github.leavesc.motion_event.databinding.ActivityMotionEventMainBinding
 
 /**
- * 作者：leavesC
- * 时间：2021/1/15 23:17
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2021/1/15 23:17
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 class MotionEventMainActivity : BaseActivity() {
 

@@ -15,10 +15,10 @@ import javax.lang.model.util.Elements
 import javax.tools.Diagnostic
 
 /**
- * 作者：leavesC
- * 时间：2020/10/5 22:17
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/10/5 22:17
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 class EasyRouterProcessor : AbstractProcessor() {
 

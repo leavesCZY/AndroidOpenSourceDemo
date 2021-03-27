@@ -4,10 +4,10 @@ import okhttp3.Interceptor
 import okhttp3.Response
 
 /**
- * 作者：leavesC
- * 时间：2020/11/6 22:08
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/11/6 22:08
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 class ProgressInterceptor : Interceptor {
 

@@ -8,16 +8,16 @@ import github.leavesc.easyeventbus_api.Event
 import github.leavesc.easyeventbus_demo.databinding.ActivityEasyEventBusMainBinding
 
 /**
- * 作者：leavesC
- * 时间：2021/1/15 23:42
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2021/1/15 23:42
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 class EasyEventBusMainActivity : BaseActivity() {
 
     override val bind by getBind<ActivityEasyEventBusMainBinding>()
 
-    private val eventTest = EasyBusEventTest()
+    private val eventTest = EasyEventBusTest()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,7 +49,7 @@ class EasyEventBusMainActivity : BaseActivity() {
 
 }
 
-class EasyBusEventTest {
+class EasyEventBusTest {
 
     @Event
     fun stringFun(msg: String) {

@@ -17,10 +17,10 @@ import okhttp3.OkHttpClient
 import java.io.InputStream
 
 /**
- * 作者：leavesC
- * 时间：2020/11/5 23:16
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/11/5 23:16
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 @GlideModule
 class MyAppGlideModule : AppGlideModule() {

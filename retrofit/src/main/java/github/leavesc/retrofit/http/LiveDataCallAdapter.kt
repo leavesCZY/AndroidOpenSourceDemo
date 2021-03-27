@@ -9,10 +9,10 @@ import java.lang.reflect.Type
 import java.util.concurrent.atomic.AtomicBoolean
 
 /**
- * 作者：leavesC
- * 时间：2020/10/22 21:06
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/10/22 21:06
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 class LiveDataCallAdapter<R>(private val responseType: Type) : CallAdapter<R, LiveData<R>> {
 

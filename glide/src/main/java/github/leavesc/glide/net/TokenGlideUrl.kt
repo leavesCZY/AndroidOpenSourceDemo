@@ -7,7 +7,7 @@ import java.net.URI
  * @Author: leavesC
  * @Date: 2020/11/6 15:13
  * @Desc:
- * GitHub：https://github.com/leavesC
+ * @Github：https://github.com/leavesC
  */
 class TokenGlideUrl(private val selfUrl: String) : GlideUrl(selfUrl) {
 

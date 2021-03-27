@@ -10,10 +10,10 @@ import java.io.IOException
 import java.lang.ref.WeakReference
 
 /**
- * 作者：leavesC
- * 时间：2020/11/6 21:58
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/11/6 21:58
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 internal class ProgressResponseBody constructor(
     private val imageUrl: String,

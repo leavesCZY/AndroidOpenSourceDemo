@@ -7,10 +7,10 @@ import java.lang.reflect.ParameterizedType
 import java.lang.reflect.Type
 
 /**
- * 作者：leavesC
- * 时间：2020/10/22 20:53
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/10/22 20:53
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 class LiveDataCallAdapterFactory private constructor() : CallAdapter.Factory() {
 

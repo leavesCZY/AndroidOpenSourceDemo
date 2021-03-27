@@ -7,10 +7,10 @@ import github.leavesc.retrofit.databinding.ActivityLiveDataCallAdapterBinding
 import github.leavesc.retrofit.http.RetrofitManager
 
 /**
- * 作者：leavesC
- * 时间：2020/10/24 12:39
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/10/24 12:39
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 class LiveDataCallAdapterActivity : BaseActivity() {
 

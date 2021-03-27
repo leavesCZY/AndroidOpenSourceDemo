@@ -13,10 +13,10 @@ import java.io.IOException
 import java.io.InputStream
 
 /**
- * 作者：leavesC
- * 时间：2020/11/5 23:16
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/11/5 23:16
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 class OkHttpStreamFetcher(private val client: Call.Factory, private val url: GlideUrl) :
     DataFetcher<InputStream>, Callback {

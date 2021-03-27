@@ -4,10 +4,10 @@ import android.content.Context
 import android.widget.Toast
 
 /**
- * 作者：leavesC
- * 时间：2020/10/2 13:21
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/10/2 13:21
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 object ContextHolder {
 

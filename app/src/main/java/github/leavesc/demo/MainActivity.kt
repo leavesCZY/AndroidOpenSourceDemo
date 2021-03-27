@@ -16,10 +16,10 @@ import github.leavesc.motion_layout.MotionLayoutMainActivity
 import github.leavesc.retrofit.LiveDataCallAdapterActivity
 
 /**
- * 作者：leavesC
- * 时间：2020/10/2 13:14
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/10/2 13:14
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 @Router(EasyRouterPath.PATH_EASY_ROUTER_APP_MAIN_PAGE)
 class MainActivity : BaseActivity() {

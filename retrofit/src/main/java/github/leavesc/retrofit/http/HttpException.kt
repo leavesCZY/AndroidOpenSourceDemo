@@ -4,10 +4,10 @@ import java.io.IOException
 import java.net.SocketException
 
 /**
- * 作者：leavesC
- * 时间：2020/10/24 10:30
- * 描述：
- * GitHub：https://github.com/leavesC
+ * @Author: leavesC
+ * @Date: 2020/10/24 10:30
+ * @Desc:
+ * @Github：https://github.com/leavesC
  */
 sealed class BaseHttpException(
     val errorCode: Int,
