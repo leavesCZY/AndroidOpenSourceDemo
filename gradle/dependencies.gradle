@@ -19,7 +19,7 @@ ext {
     ]
 
     dependencies_feature = [
-            "coil"                   : "io.coil-kt:coil:1.0.0",
+            "coil"                   : "io.coil-kt:coil:1.1.1",
             "volley"                 : "com.android.volley:volley:1.2.0",
             "javapoet"               : "com.squareup:javapoet:1.13.0",
             "glide"                  : "com.github.bumptech.glide:glide:4.12.0",
