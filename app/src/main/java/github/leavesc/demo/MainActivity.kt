@@ -1,6 +1,7 @@
 package github.leavesc.demo
 
 import android.os.Bundle
+import android.util.Log
 import github.leavesc.base.BaseActivity
 import github.leavesc.base.EasyRouterPath
 import github.leavesc.coil.CoilMainActivity
@@ -11,6 +12,7 @@ import github.leavesc.easyeventbus_demo.EasyEventBusMainActivity
 import github.leavesc.easyrouter_annotation.Router
 import github.leavesc.easyrouter_api.EasyRouter
 import github.leavesc.glide.GlideActivity
+import github.leavesc.launchmode.StandardActivity
 import github.leavesc.motion_event.MotionEventMainActivity
 import github.leavesc.motion_layout.MotionLayoutMainActivity
 import github.leavesc.retrofit.LiveDataCallAdapterActivity
@@ -54,6 +56,10 @@ class MainActivity : BaseActivity() {
         }
         bind.btnCustomView.setOnClickListener {
             startActivity(CustomViewMainActivity::class.java)
+        }
+        bind.btnLaunchMode.setOnClickListener {
+            Log.e("TAG", "task: " + taskId)
+            startActivity(StandardActivity::class.java)
         }
     }
 

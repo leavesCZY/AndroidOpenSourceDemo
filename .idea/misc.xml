@@ -3,7 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/MyProject/AndroidOpenSourceDemo/app/src/main/res/layout/activity_main.xml" value="0.29743589743589743" />
+        <entry key="..\:/MyProject/AndroidOpenSourceDemo/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/MyProject/AndroidOpenSourceDemo/coil/src/main/res/layout/activity_coil_main.xml" value="0.2796875" />
         <entry key="..\:/MyProject/AndroidOpenSourceDemo/constraint_layout/src/main/res/layout/activity_constraint_helper.xml" value="0.2796875" />
         <entry key="..\:/MyProject/AndroidOpenSourceDemo/constraint_layout/src/main/res/layout/activity_constraint_layout_main.xml" value="0.2796875" />
@@ -11,6 +11,7 @@
         <entry key="..\:/MyProject/AndroidOpenSourceDemo/customview/src/main/res/layout/activity_circle_refresh_view.xml" value="0.2796875" />
         <entry key="..\:/MyProject/AndroidOpenSourceDemo/easyeventbus_demo/src/main/res/layout/activity_easy_event_bus_main.xml" value="0.36614583333333334" />
         <entry key="..\:/MyProject/AndroidOpenSourceDemo/glide/src/main/res/layout/activity_glide.xml" value="0.36614583333333334" />
+        <entry key="..\:/MyProject/AndroidOpenSourceDemo/launchmode/src/main/res/layout/activity_base_launch_mode.xml" value="0.1" />
         <entry key="..\:/MyProject/AndroidOpenSourceDemo/motion_event/src/main/res/layout/activity_motion_event_demo_bactivity.xml" value="0.36614583333333334" />
         <entry key="..\:/MyProject/AndroidOpenSourceDemo/motion_event/src/main/res/layout/activity_motion_event_main.xml" value="0.36614583333333334" />
         <entry key="..\:/MyProject/AndroidOpenSourceDemo/motion_event/src/main/res/layout/item_content_a.xml" value="0.36614583333333334" />

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="github.leavesc.launchmode">
+
+    <application>
+        <activity
+            android:name=".StandardActivity"
+            android:launchMode="standard"
+            android:taskAffinity="task.a" />
+        <activity
+            android:name=".SingleTopActivity"
+            android:launchMode="singleTop"
+            android:taskAffinity="task.b" />
+        <activity
+            android:name=".SingleTaskActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="task.c" />
+        <activity
+            android:name=".SingleInstanceActivity"
+            android:launchMode="singleInstance"
+            android:taskAffinity="task.d" />
+    </application>
+
+</manifest>

@@ -55,6 +55,11 @@
             style="@style/BtnTheme"
             android:text="CustomView" />
 
+        <Button
+            android:id="@+id/btn_launchMode"
+            style="@style/BtnTheme"
+            android:text="LaunchMode" />
+
     </LinearLayout>
 
 </ScrollView>
