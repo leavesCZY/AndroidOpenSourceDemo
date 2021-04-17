@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cb_newTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NewTask" />
+
+    <CheckBox
+        android:id="@+id/cb_singleTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SingleTop" />
+
+    <CheckBox
+        android:id="@+id/cb_clearTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ClearTop" />
+
+    <CheckBox
+        android:id="@+id/cb_clearTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ClearTask" />
+
+    <Button
+        android:id="@+id/btn_startStandardActivity"
+        style="@style/BtnTheme"
+        android:text="StandardActivity" />
+
+    <Button
+        android:id="@+id/btn_startSingleTopActivity"
+        style="@style/BtnTheme"
+        android:text="SingleTopActivity" />
+
+    <Button
+        android:id="@+id/btn_startSingleTaskActivity"
+        style="@style/BtnTheme"
+        android:text="SingleTaskActivity" />
+
+    <Button
+        android:id="@+id/btn_startSingleInstanceActivity"
+        style="@style/BtnTheme"
+        android:text="SingleInstanceActivity" />
+
+</LinearLayout>

@@ -3,6 +3,7 @@
     package="github.leavesc.launchmode">
 
     <application>
+        <activity android:name=".LaunchModeMainActivity" />
         <activity
             android:name=".StandardActivity"
             android:launchMode="standard"
@@ -17,6 +18,23 @@
             android:taskAffinity="task.c" />
         <activity
             android:name=".SingleInstanceActivity"
+            android:launchMode="singleInstance"
+            android:taskAffinity="task.d" />
+
+        <activity
+            android:name=".StandardActivity2"
+            android:launchMode="standard"
+            android:taskAffinity="task.a" />
+        <activity
+            android:name=".SingleTopActivity2"
+            android:launchMode="singleTop"
+            android:taskAffinity="task.b" />
+        <activity
+            android:name=".SingleTaskActivity2"
+            android:launchMode="singleTask"
+            android:taskAffinity="task.c" />
+        <activity
+            android:name=".SingleInstanceActivity2"
             android:launchMode="singleInstance"
             android:taskAffinity="task.d" />
     </application>

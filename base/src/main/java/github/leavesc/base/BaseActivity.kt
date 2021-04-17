@@ -38,6 +38,14 @@ abstract class BaseActivity : AppCompatActivity() {
         startActivity(Intent(this, clazz))
     }
 
+    protected inline fun <reified T : Activity> startActivity() {
+        startActivity(Intent(this, T::class.java))
+    }
+
+    protected inline fun <reified T : Activity> startActivity(flag: Int) {
+        startActivity(Intent(this, T::class.java).setFlags(flag))
+    }
+
     protected fun log(log: Any?) {
         Log.e(javaClass.simpleName, log.toString())
     }
