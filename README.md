@@ -2,11 +2,13 @@
 
 存放了一些实践 Demo
 
-关注公众号：[**字节数组**](https://s3.ax1x.com/2021/02/18/yRiE4K.png) 查看更多文章
+关注公众号：[**字节数组**](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/36784c0d2b924b04afb5ee09eb16ca6f~tplv-k3u1fbpfcp-watermark.image) 查看更多文章
 
-![公众号：字节数组](https://s3.ax1x.com/2021/02/18/yRiE4K.png)
+![公众号：字节数组](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/36784c0d2b924b04afb5ee09eb16ca6f~tplv-k3u1fbpfcp-watermark.image)
 
 相关联的文章：
+
+[聊聊 Activity 的启动模式](https://juejin.cn/post/6952886121328345101)
 
 [一文读懂 View 的 Measure、Layout、Draw 流程](https://juejin.cn/post/6939540905581887502)
 
