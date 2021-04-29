@@ -1,4 +1,0 @@
-dependencies {
-    implementation project(path: ':easyeventbus_api')
-    kapt project(path: ':easyeventbus_processor')
-}

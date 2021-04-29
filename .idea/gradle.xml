@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/base" />
+            <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/coil" />
             <option value="$PROJECT_DIR$/constraint_layout" />
             <option value="$PROJECT_DIR$/customview" />
@@ -31,7 +32,6 @@
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
-        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>
   </component>

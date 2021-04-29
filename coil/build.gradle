@@ -1,4 +1,0 @@
-dependencies {
-    implementation dependencies_all['coil']
-    implementation dependencies_all['volley']
-}

@@ -1,4 +1,0 @@
-dependencies {
-    implementation dependencies_all['javapoet']
-    implementation project(path: ':easyeventbus_api')
-}
