@@ -1,5 +1,6 @@
 package github.leavesc.base
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.widget.Toast
 
@@ -9,6 +10,7 @@ import android.widget.Toast
  * @Desc:
  * @Github：https://github.com/leavesC
  */
+@SuppressLint("StaticFieldLeak")
 object ContextHolder {
 
     lateinit var context: Context

@@ -11,6 +11,11 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/btn_compose"
+            style="@style/BtnTheme"
+            android:text="Compose" />
+
+        <Button
             android:id="@+id/btn_easyEventBus"
             style="@style/BtnTheme"
             android:text="EasyEventBus" />

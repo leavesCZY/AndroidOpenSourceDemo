@@ -18,4 +18,5 @@ dependencies {
     implementation project(path: ':motion_event')
     implementation project(path: ':customview')
     implementation project(path: ':launchmode')
+    implementation project(path: ':compose')
 }

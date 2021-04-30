@@ -4,6 +4,7 @@ import android.os.Bundle
 import github.leavesc.base.BaseActivity
 import github.leavesc.base.EasyRouterPath
 import github.leavesc.coil.CoilMainActivity
+import github.leavesc.compose.ComposeMainActivity
 import github.leavesc.constraint_layout.ConstraintLayoutMainActivity
 import github.leavesc.customview.CustomViewMainActivity
 import github.leavesc.demo.databinding.ActivityMainBinding
@@ -29,35 +30,38 @@ class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        bind.btnCompose.setOnClickListener {
+            startActivity<ComposeMainActivity>()
+        }
         bind.btnEasyEventBus.setOnClickListener {
-            startActivity(EasyEventBusMainActivity::class.java)
+            startActivity<EasyEventBusMainActivity>()
         }
         bind.btnEasyRouter.setOnClickListener {
             EasyRouter.navigation(EasyRouterPath.PATH_EASY_ROUTER_MAIN)
         }
         bind.btnLiveDataCallAdapter.setOnClickListener {
-            startActivity(LiveDataCallAdapterActivity::class.java)
+            startActivity<LiveDataCallAdapterActivity>()
         }
         bind.btnGlide.setOnClickListener {
-            startActivity(GlideActivity::class.java)
+            startActivity<GlideActivity>()
         }
         bind.btnCoil.setOnClickListener {
-            startActivity(CoilMainActivity::class.java)
+            startActivity<CoilMainActivity>()
         }
         bind.btnConstraintLayout.setOnClickListener {
-            startActivity(ConstraintLayoutMainActivity::class.java)
+            startActivity<ConstraintLayoutMainActivity>()
         }
         bind.btnMotionLayout.setOnClickListener {
-            startActivity(MotionLayoutMainActivity::class.java)
+            startActivity<MotionLayoutMainActivity>()
         }
         bind.btnMotionEvent.setOnClickListener {
-            startActivity(MotionEventMainActivity::class.java)
+            startActivity<MotionEventMainActivity>()
         }
         bind.btnCustomView.setOnClickListener {
-            startActivity(CustomViewMainActivity::class.java)
+            startActivity<CustomViewMainActivity>()
         }
         bind.btnLaunchMode.setOnClickListener {
-            startActivity(LaunchModeMainActivity::class.java)
+            startActivity<LaunchModeMainActivity>()
         }
     }
 
