@@ -1,0 +1,21 @@
+kapt {
+    arguments {
+        arg("EASYROUTER_MODULE_NAME", project.getName())
+    }
+}
+
+dependencies {
+    implementation project(path: ':easyrouter_api')
+    implementation project(path: ':easyrouter_annotation')
+    kapt project(path: ':easyrouter_processor')
+    implementation project(path: ':easyrouter_demo')
+    implementation project(path: ':easyeventbus_demo')
+    implementation project(path: ':retrofit')
+    implementation project(path: ':glide')
+    implementation project(path: ':coil')
+    implementation project(path: ':constraint_layout')
+    implementation project(path: ':motion_layout')
+    implementation project(path: ':motion_event')
+    implementation project(path: ':customview')
+    implementation project(path: ':launchmode')
+}

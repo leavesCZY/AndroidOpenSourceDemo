@@ -1,0 +1,5 @@
+dependencies {
+    implementation dependencies_all['glide']
+    kapt dependencies_all['glide-kapt']
+    implementation dependencies_all['okhttp']
+}

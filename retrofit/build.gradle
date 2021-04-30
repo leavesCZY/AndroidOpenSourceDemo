@@ -1,0 +1,6 @@
+dependencies {
+    implementation dependencies_all['retrofit']
+    implementation dependencies_all['retrofit-converter-gson']
+    debugImplementation dependencies_all['monitor-debugImpl']
+    releaseImplementation dependencies_all['monitor-releaseImpl']
+}
