@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.8">
       <module name="AndroidOpenSourceDemo.buildSrc" target="11" />
+      <module name="AndroidOpenSourceDemo.compose" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

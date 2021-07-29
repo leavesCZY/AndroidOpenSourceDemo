@@ -4,7 +4,6 @@ import android.os.Bundle
 import github.leavesc.base.BaseActivity
 import github.leavesc.base.EasyRouterPath
 import github.leavesc.coil.CoilMainActivity
-import github.leavesc.compose.ComposeMainActivity
 import github.leavesc.constraint_layout.ConstraintLayoutMainActivity
 import github.leavesc.customview.CustomViewMainActivity
 import github.leavesc.demo.databinding.ActivityMainBinding
@@ -30,9 +29,6 @@ class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        bind.btnCompose.setOnClickListener {
-            startActivity<ComposeMainActivity>()
-        }
         bind.btnEasyEventBus.setOnClickListener {
             startActivity<EasyEventBusMainActivity>()
         }

@@ -14,7 +14,6 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/base" />
             <option value="$PROJECT_DIR$/coil" />
-            <option value="$PROJECT_DIR$/compose" />
             <option value="$PROJECT_DIR$/constraint_layout" />
             <option value="$PROJECT_DIR$/customview" />
             <option value="$PROJECT_DIR$/easyeventbus_api" />
