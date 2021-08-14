@@ -11,6 +11,7 @@ import github.leavesc.easyeventbus_demo.EasyEventBusMainActivity
 import github.leavesc.easyrouter_annotation.Router
 import github.leavesc.easyrouter_api.EasyRouter
 import github.leavesc.glide.GlideActivity
+import github.leavesc.jetpack_compose.ComposeMainActivity
 import github.leavesc.launchmode.LaunchModeMainActivity
 import github.leavesc.motion_event.MotionEventMainActivity
 import github.leavesc.motion_layout.MotionLayoutMainActivity
@@ -58,6 +59,9 @@ class MainActivity : BaseActivity() {
         }
         bind.btnLaunchMode.setOnClickListener {
             startActivity<LaunchModeMainActivity>()
+        }
+        bind.btnJetpackCompose.setOnClickListener {
+            startActivity<ComposeMainActivity>()
         }
     }
 
