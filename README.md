@@ -2,9 +2,9 @@
 
 存放了一些实践 Demo
 
-关注公众号：[**字节数组**](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/36784c0d2b924b04afb5ee09eb16ca6f~tplv-k3u1fbpfcp-watermark.image) 查看更多文章
+关注公众号：[**字节数组**](https://upload-images.jianshu.io/upload_images/2552605-aacaa2893c0add99.png) 查看更多文章
 
-![公众号：字节数组](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/36784c0d2b924b04afb5ee09eb16ca6f~tplv-k3u1fbpfcp-watermark.image)
+![公众号：字节数组](https://upload-images.jianshu.io/upload_images/2552605-aacaa2893c0add99.png)
 
 相关联的文章：
 

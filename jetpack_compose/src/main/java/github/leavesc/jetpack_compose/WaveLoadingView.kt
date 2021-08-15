@@ -16,7 +16,7 @@ import androidx.compose.ui.graphics.*
 import androidx.compose.ui.graphics.drawscope.clipPath
 import androidx.compose.ui.graphics.drawscope.drawIntoCanvas
 import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.ui.unit.sp
+import androidx.compose.ui.unit.TextUnit
 
 /**
  * @Author: leavesC
@@ -28,7 +28,7 @@ import androidx.compose.ui.unit.sp
 fun WaveLoadingView(
     modifier: Modifier,
     text: String,
-    textSizeSp: Int,
+    textSize: TextUnit,
     waveColor: Color,
     downTextColor: Color,
 ) {
@@ -66,7 +66,7 @@ fun WaveLoadingView(
         )
         Canvas(modifier = modifier.requiredSize(size = circleSizeDp)) {
             drawIntoCanvas {
-                textPaint.textSize = textSizeSp.sp.toPx()
+                textPaint.textSize = textSize.toPx()
                 drawText(
                     canvas = it.nativeCanvas,
                     size = circleSizePx,

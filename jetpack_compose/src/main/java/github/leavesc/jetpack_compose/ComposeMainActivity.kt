@@ -12,6 +12,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import github.leavesc.jetpack_compose.ui.theme.AndroidOpenSourceDemoTheme
 
 /**
@@ -34,39 +35,37 @@ class ComposeMainActivity : ComponentActivity() {
                         horizontalAlignment = Alignment.CenterHorizontally,
                     ) {
                         WaveLoadingView(
-                            modifier = Modifier.requiredSize(220.dp),
+                            modifier = Modifier.requiredSize(size = 160.dp),
                             text = "开",
-                            textSizeSp = 150,
+                            textSize = 110.sp,
                             waveColor = colorOf("#FFF54183"),
                             downTextColor = Color.White
                         )
                         WaveLoadingView(
-                            modifier = Modifier.requiredSize(200.dp),
+                            modifier = Modifier.requiredSize(size = 200.dp),
                             text = "心",
-                            textSizeSp = 150,
+                            textSize = 150.sp,
                             waveColor = colorOf("#FFBB86FC"),
                             downTextColor = Color.White
                         )
                         WaveLoadingView(
-                            modifier = Modifier.requiredSize(200.dp),
+                            modifier = Modifier.requiredSize(size = 240.dp),
                             text = "最",
-                            textSizeSp = 150,
+                            textSize = 170.sp,
                             waveColor = colorOf("#FF50A4F7"),
                             downTextColor = Color.White
                         )
                         WaveLoadingView(
-                            modifier = Modifier
-                                .fillMaxSize(fraction = 0.8f)
-                                .wrapContentWidth(align = Alignment.CenterHorizontally),
+                            modifier = Modifier.fillMaxSize(),
                             text = "重",
-                            textSizeSp = 180,
+                            textSize = 240.sp,
                             waveColor = colorOf("#FF6200EE"),
                             downTextColor = Color.White
                         )
                         WaveLoadingView(
                             modifier = Modifier.wrapContentSize(),
                             text = "要",
-                            textSizeSp = 240,
+                            textSize = 260.sp,
                             waveColor = colorOf("#FF009688"),
                             downTextColor = Color.White
                         )
