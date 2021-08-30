@@ -28,7 +28,7 @@ def doAndroid() {
         buildToolsVersion "30.0.3"
         defaultConfig {
             if (FunctionExt.isAppModule()) {
-                applicationId "github.leavesc.demo"
+                applicationId "github.leavesc.androidOpenSourceDemo"
             }
             minSdkVersion 21
             targetSdkVersion 30
@@ -37,7 +37,7 @@ def doAndroid() {
         }
         signingConfigs {
             releaseConfig {
-                storeFile file("..\\doc\\key.jks")
+                storeFile file(".." + File.separator + "doc" + File.separator + "key.jks")
                 storePassword "123456"
                 keyAlias "leavesC"
                 keyPassword "123456"
