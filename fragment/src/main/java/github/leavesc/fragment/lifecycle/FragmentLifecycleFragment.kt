@@ -41,6 +41,7 @@ class FragmentLifecycleFragment : BaseFragment(R.layout.fragment_fragment_lifecy
         get() = "Fragment-$fragmentTag"
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         val llRoot = view.findViewById<View>(R.id.llRoot)
         val tvTag = view.findViewById<TextView>(R.id.tvTag)
         llRoot.setBackgroundColor(bgColor)

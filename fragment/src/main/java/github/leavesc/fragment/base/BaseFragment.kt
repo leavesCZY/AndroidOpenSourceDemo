@@ -31,7 +31,7 @@ open class BaseFragment(layoutId: Int = 0) : Fragment(layoutId) {
     override fun onAttach(activity: Activity) {
         log("onAttach-activity-start")
         super.onAttach(activity)
-        log("onAttach-activity-start")
+        log("onAttach-activity-end")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
