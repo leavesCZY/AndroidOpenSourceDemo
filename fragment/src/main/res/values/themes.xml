@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.AndroidProject.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+</resources>

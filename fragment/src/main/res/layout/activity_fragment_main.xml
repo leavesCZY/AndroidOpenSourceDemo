@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentMainActivity">
+
+    <Button
+        android:id="@+id/btnFragmentFactory"
+        style="@style/BtnTheme"
+        android:text="FragmentFactory" />
+
+    <Button
+        android:id="@+id/btnActivityResultApi"
+        style="@style/BtnTheme"
+        android:text="ActivityResultApi" />
+
+    <Button
+        android:id="@+id/btnFragmentResultApi"
+        style="@style/BtnTheme"
+        android:text="FragmentResultApi" />
+
+    <Button
+        android:id="@+id/btnViewPager2"
+        style="@style/BtnTheme"
+        android:text="Fragment ViewPager2" />
+
+    <Button
+        android:id="@+id/btnFragmentLifecycle"
+        style="@style/BtnTheme"
+        android:text="Fragment 生命周期" />
+
+    <Button
+        android:id="@+id/btnExtend"
+        style="@style/BtnTheme"
+        android:text="Fragment 妙用" />
+
+</LinearLayout>

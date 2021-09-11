@@ -25,7 +25,7 @@
         <entry key="..\:/MyProject/AndroidOpenSourceDemo/motion_layout/src/main/res/layout/fragment_fun.xml" value="0.3260416666666667" />
         <entry key="..\:/MyProject/AndroidOpenSourceDemo/motion_layout/src/main/res/layout/item_card.xml" value="0.3260416666666667" />
         <entry key="..\:/MyProject/AndroidOpenSourceDemo/retrofit/src/main/res/layout/activity_live_data_call_adapter.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/CZY/Desktop/AndroidOpenSourceDemo/app/src/main/res/layout/activity_main.xml" value="0.21467391304347827" />
+        <entry key="..\:/Users/CZY/Desktop/AndroidOpenSourceDemo/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/CZY/Desktop/AndroidOpenSourceDemo/coil/src/main/res/layout/activity_coil_main.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/CZY/Desktop/AndroidOpenSourceDemo/customview/src/main/res/layout/activity_circle_refresh_view.xml" value="0.28940217391304346" />
         <entry key="..\:/Users/CZY/Desktop/AndroidOpenSourceDemo/customview/src/main/res/layout/activity_custom_view_main.xml" value="0.28940217391304346" />
@@ -33,6 +33,9 @@
         <entry key="..\:/Users/CZY/Desktop/AndroidOpenSourceDemo/customview/src/main/res/layout/activity_tai_ji_view.xml" value="0.28940217391304346" />
         <entry key="..\:/Users/CZY/Desktop/AndroidOpenSourceDemo/customview/src/main/res/layout/activity_wave_loading_view.xml" value="0.28940217391304346" />
         <entry key="..\:/Users/CZY/Desktop/AndroidOpenSourceDemo/customview/src/main/res/layout/activity_wave_view.xml" value="0.28940217391304346" />
+        <entry key="..\:/Users/CZY/Desktop/AndroidOpenSourceDemo/fragment/src/main/res/layout/activity_activity_result_api.xml" value="0.31666666666666665" />
+        <entry key="..\:/Users/CZY/Desktop/AndroidOpenSourceDemo/fragment/src/main/res/layout/activity_fragment_main.xml" value="0.31666666666666665" />
+        <entry key="..\:/Users/CZY/Desktop/AndroidOpenSourceDemo/fragment/src/main/res/layout/fragment_fragment_result_api_a.xml" value="0.31666666666666665" />
         <entry key="..\:/Users/CZY/Desktop/AndroidOpenSourceDemo/launchmode/src/main/res/layout/activity_base_intent_flag.xml" value="0.29010416666666666" />
         <entry key="..\:/Users/CZY/Desktop/AndroidOpenSourceDemo/launchmode/src/main/res/layout/activity_base_launch_mode.xml" value="0.24322916666666666" />
         <entry key="..\:/Users/CZY/Desktop/AndroidOpenSourceDemo/launchmode/src/main/res/layout/activity_launch_mode_main.xml" value="0.29010416666666666" />

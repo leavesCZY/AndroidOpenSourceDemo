@@ -17,6 +17,9 @@ import androidx.viewbinding.ViewBinding
  */
 abstract class BaseActivity : AppCompatActivity() {
 
+    protected open val logTag: String
+        get() = javaClass.simpleName
+
     abstract val bind: ViewBinding?
 
     protected inline fun <reified T> getBind(): Lazy<T> where T : ViewBinding {
@@ -28,10 +31,54 @@ abstract class BaseActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        log("onCreate-start")
         super.onCreate(savedInstanceState)
         bind?.root?.apply {
             setContentView(this)
         }
+        log("onCreate-end")
+    }
+
+    override fun onStart() {
+        log("onStart-start")
+        super.onStart()
+        log("onStart-end")
+    }
+
+    override fun onResume() {
+        log("onResume-start")
+        super.onResume()
+        log("onResume-end")
+    }
+
+    override fun onPause() {
+        log("onPause-start")
+        super.onPause()
+        log("onPause-end")
+    }
+
+    override fun onStop() {
+        log("onStop-start")
+        super.onStop()
+        log("onStop-end")
+    }
+
+    override fun onDestroy() {
+        log("onDestroy-start")
+        super.onDestroy()
+        log("onDestroy-end")
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        log("onSaveInstanceState-start")
+        super.onSaveInstanceState(outState)
+        log("onSaveInstanceState-end")
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        log("onRestoreInstanceState-start")
+        super.onRestoreInstanceState(savedInstanceState)
+        log("onRestoreInstanceState-end")
     }
 
     protected fun <T : Activity> startActivity(clazz: Class<T>) {
@@ -46,8 +93,8 @@ abstract class BaseActivity : AppCompatActivity() {
         startActivity(Intent(this, T::class.java).setFlags(flag))
     }
 
-    protected fun log(log: Any?) {
-        Log.e(javaClass.simpleName, log.toString())
+    protected open fun log(log: Any?) {
+        Log.e(logTag, log.toString())
     }
 
     protected fun showToast(msg: Any) {

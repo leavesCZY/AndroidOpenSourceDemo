@@ -11,59 +11,65 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btn_easyEventBus"
+            android:id="@+id/btnFragment"
             style="@style/BtnTheme"
-            android:text="EasyEventBus" />
+            android:text="Fragment" />
 
         <Button
-            android:id="@+id/btn_easyRouter"
+            android:id="@+id/btnJetpackCompose"
             style="@style/BtnTheme"
-            android:text="EasyRouter" />
+            android:text="Jetpack Compose" />
 
         <Button
-            android:id="@+id/btn_liveDataCallAdapter"
-            style="@style/BtnTheme"
-            android:text="LiveDataCallAdapter" />
-
-        <Button
-            android:id="@+id/btn_glide"
-            style="@style/BtnTheme"
-            android:text="Glide" />
-
-        <Button
-            android:id="@+id/btn_coil"
-            style="@style/BtnTheme"
-            android:text="Coil" />
-
-        <Button
-            android:id="@+id/btn_constraintLayout"
-            style="@style/BtnTheme"
-            android:text="ConstraintLayout" />
-
-        <Button
-            android:id="@+id/btn_motionLayout"
-            style="@style/BtnTheme"
-            android:text="MotionLayout" />
-
-        <Button
-            android:id="@+id/btn_motionEvent"
-            style="@style/BtnTheme"
-            android:text="MotionEvent" />
-
-        <Button
-            android:id="@+id/btn_customView"
-            style="@style/BtnTheme"
-            android:text="CustomView" />
-
-        <Button
-            android:id="@+id/btn_launchMode"
+            android:id="@+id/btnLaunchMode"
             style="@style/BtnTheme"
             android:text="LaunchMode" />
 
         <Button
-            android:id="@+id/btn_jetpackCompose"
+            android:id="@+id/btnCustomView"
             style="@style/BtnTheme"
-            android:text="Jetpack Compose" />
+            android:text="CustomView" />
+
+
+        <Button
+            android:id="@+id/btnMotionEvent"
+            style="@style/BtnTheme"
+            android:text="MotionEvent" />
+
+        <Button
+            android:id="@+id/btnMotionLayout"
+            style="@style/BtnTheme"
+            android:text="MotionLayout" />
+
+        <Button
+            android:id="@+id/btnConstraintLayout"
+            style="@style/BtnTheme"
+            android:text="ConstraintLayout" />
+
+        <Button
+            android:id="@+id/btnCoil"
+            style="@style/BtnTheme"
+            android:text="Coil" />
+
+        <Button
+            android:id="@+id/btnGlide"
+            style="@style/BtnTheme"
+            android:text="Glide" />
+
+        <Button
+            android:id="@+id/btnLiveDataCallAdapter"
+            style="@style/BtnTheme"
+            android:text="LiveDataCallAdapter" />
+
+        <Button
+            android:id="@+id/btnEasyRouter"
+            style="@style/BtnTheme"
+            android:text="EasyRouter" />
+
+        <Button
+            android:id="@+id/btnEasyEventBus"
+            style="@style/BtnTheme"
+            android:text="EasyEventBus" />
 
     </LinearLayout>
 

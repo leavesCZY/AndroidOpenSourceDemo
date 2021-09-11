@@ -19,4 +19,5 @@ dependencies {
     implementation project(path: ':customview')
     implementation project(path: ':launchmode')
     implementation project(path: ':jetpack_compose')
+    implementation project(path: ':fragment')
 }

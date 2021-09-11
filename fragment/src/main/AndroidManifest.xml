@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="github.leavesc.fragment">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application>
+        <activity
+            android:name="github.leavesc.fragment.viewpager2.ViewPager2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_factory.FragmentFactoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_result_api.ActivityResultApiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_result_api.ActivityResultApiTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_result_api.FragmentResultApiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lifecycle.FragmentLifecycleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".extend.FragmentExtendActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FragmentMainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
