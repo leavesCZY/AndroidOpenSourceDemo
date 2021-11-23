@@ -24,14 +24,14 @@ if (FunctionExt.isAppModule()) {
 
 def doAndroid() {
     android {
-        compileSdkVersion 30
+        compileSdkVersion 31
         buildToolsVersion "30.0.3"
         defaultConfig {
             if (FunctionExt.isAppModule()) {
                 applicationId "github.leavesc.androidOpenSourceDemo"
             }
             minSdkVersion 21
-            targetSdkVersion 30
+            targetSdkVersion 31
             versionCode 1
             versionName "1.0"
         }
@@ -73,7 +73,6 @@ def doAndroid() {
         configurations.all {
             resolutionStrategy {
 //                failOnVersionConflict()
-                force dependencies_all['kotlin-stdlib']
                 force dependencies_all['okhttp']
             }
         }

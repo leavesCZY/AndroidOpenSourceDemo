@@ -11,7 +11,7 @@ import androidx.activity.result.contract.ActivityResultContract
  * @Desc:
  * @Github：https://github.com/leavesC
  */
-class GetLocation : ActivityResultContract<String, String>() {
+class GetLocation : ActivityResultContract<String, String?>() {
 
     companion object {
 
