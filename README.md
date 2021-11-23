@@ -1,14 +1,14 @@
 # AndroidOpenSourceDemo
 
-存放了一些实践 Demo
+🎁🎁🎁 存放了一些实践 Demo
 
 相关联的文章：
 
-[一文读懂 Fragment 的方方面面](https://juejin.cn/post/7006970844542926855)
-
-[学不动也要学，Jetpack Compose 自定义 View 你会不会](https://juejin.cn/post/6996568363581308959)
+[学不动也要学，Jetpack Compose 自定义 View 你学不学](https://juejin.cn/post/6996568363581308959)
 
 [聊聊 Activity 的启动模式](https://juejin.cn/post/6952886121328345101)
+
+[一文读懂 Fragment 的方方面面](https://juejin.cn/post/7006970844542926855)
 
 [一文读懂 View 的 Measure、Layout、Draw 流程](https://juejin.cn/post/6939540905581887502)
 
