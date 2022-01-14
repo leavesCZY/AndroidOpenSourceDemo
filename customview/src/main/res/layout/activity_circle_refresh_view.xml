@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <github.leavesc.customview.view.CircleRefreshView
+    <github.leavesczy.customview.view.CircleRefreshView
         android:id="@+id/circleRefreshView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

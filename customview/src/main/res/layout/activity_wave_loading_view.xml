@@ -10,14 +10,14 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <github.leavesc.customview.view.WaveLoadingView
+        <github.leavesczy.customview.view.WaveLoadingView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:centerText="业"
             app:speed="1200"
             app:textSize="150sp" />
 
-        <github.leavesc.customview.view.WaveLoadingView
+        <github.leavesczy.customview.view.WaveLoadingView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:centerText="志"
@@ -25,7 +25,7 @@
             app:textSize="150sp"
             app:waveColor="@color/purple_200" />
 
-        <github.leavesc.customview.view.WaveLoadingView
+        <github.leavesczy.customview.view.WaveLoadingView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:centerText="陈"
@@ -34,7 +34,7 @@
             app:textSize="150sp"
             app:waveColor="#50a4f7" />
 
-        <github.leavesc.customview.view.WaveLoadingView
+        <github.leavesczy.customview.view.WaveLoadingView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:centerText="龖"

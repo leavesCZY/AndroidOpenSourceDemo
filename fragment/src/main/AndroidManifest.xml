@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="github.leavesc.fragment">
+    package="github.leavesczy.fragment">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -8,7 +8,7 @@
 
     <application>
         <activity
-            android:name="github.leavesc.fragment.viewpager2.ViewPager2Activity"
+            android:name="github.leavesczy.fragment.viewpager2.ViewPager2Activity"
             android:exported="false" />
         <activity
             android:name=".fragment_factory.FragmentFactoryActivity"

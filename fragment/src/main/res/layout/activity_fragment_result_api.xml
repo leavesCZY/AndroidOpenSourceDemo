@@ -13,14 +13,14 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerViewA"
-        android:name="github.leavesc.fragment.fragment_result_api.FragmentResultApiAFragment"
+        android:name="github.leavesczy.fragment.fragment_result_api.FragmentResultApiAFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerViewB"
-        android:name="github.leavesc.fragment.fragment_result_api.FragmentResultApiBFragment"
+        android:name="github.leavesczy.fragment.fragment_result_api.FragmentResultApiBFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />

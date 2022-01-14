@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
-    <github.leavesc.customview.view.TaiJiView
+    <github.leavesczy.customview.view.TaiJiView
         android:id="@+id/taiJiView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp" />
 
-    <github.leavesc.customview.view.WaveView
+    <github.leavesczy.customview.view.WaveView
         android:id="@+id/waveView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

@@ -5,7 +5,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
-        android:name="github.leavesc.fragment.activity_result_api.ActivityResultApiFragment"
+        android:name="github.leavesczy.fragment.activity_result_api.ActivityResultApiFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<github.leavesc.motion_event.MyRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<github.leavesczy.motion_event.MyRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/purple_200"
     android:padding="20dp">
 
-    <github.leavesc.motion_event.MyLinearLayout
+    <github.leavesczy.motion_event.MyLinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/purple_700"
         android:gravity="center"
         android:padding="20dp">
 
-        <github.leavesc.motion_event.MyTextView
+        <github.leavesczy.motion_event.MyTextView
             android:id="@+id/myTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,6 +21,6 @@
             android:padding="20dp"
             android:text="Hello World!" />
 
-    </github.leavesc.motion_event.MyLinearLayout>
+    </github.leavesczy.motion_event.MyLinearLayout>
 
-</github.leavesc.motion_event.MyRelativeLayout>
+</github.leavesczy.motion_event.MyRelativeLayout>

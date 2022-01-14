@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon_avatar" />
 
-    <github.leavesc.constraint_layout.CircularRevealHelper
+    <github.leavesczy.constraint_layout.CircularRevealHelper
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:constraint_referenced_ids="imageView"
